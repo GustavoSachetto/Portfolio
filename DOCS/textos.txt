@@ -1,0 +1,9 @@
+Bem-vindo, me chamamo Gustavo e sou desenvolvedor full stack. Possuo diversas experiências utilizando HTML, CSS, Javascript, Php e Mysql. Além de habilidades de edição de imagem, video e texto.
+
+Um site atrativo e responsivo é fundamental para navegação do usuário, prezando sempre a usabilidade.
+
+Interatividade ao site é necessário para que o usuário exerça uma boa comunicação com o este, de forma que traga a ele uma melhor experiência.
+
+Todo site precisa de um controle amplo sobre seus usuários ou até mesmo clientes, através disto é possivel elaborar um sistema que organize toda essa informação.
+
+Por trás do site é preciso armazenar informações, por exemplo: dados do cliente, relatório de vendas ou até mesmo notícias recentes.
