@@ -13,6 +13,7 @@
     <header>
         <h1><mark>G</mark>ustavo <mark>S</mark>achetto</h1>
         <button id="menu">Menu</button>
+        <button id="btn-topo"><img src="img/seta-cima.png" alt=""></button>
         <nav>
             <a href="#habilidades">Habilidades</a>
             <a href="#tecnologias">Tecnologias</a>
@@ -23,8 +24,8 @@
     <main>
         <article id="sobre">
             <section class="container-sobre">
-                <h2>Desenvolvedor Full-Stack</h2>
-                <p>
+                <h2><span id="text-desenvolvedor"></span><span class="text-digitando">|</span></h2>
+                <p class="entrada-padrao">
                     Bem-vindo, me chamo Gustavo e sou desenvolvedor Full Stack. Possuo diversas experiências utilizando <strong>HTML, CSS, Javascript, Php e Mysql.</strong> Além de habilidades em edição de imagem, vídeo e texto.
                 </p>
                 <div class="container-redes">
@@ -34,13 +35,14 @@
                 </div>
             </section>
             <aside class="container-imagem-demostrativa">
-                <img src="" alt="Demostrativo">
+                <img src="img/dispositivo.png" alt="Demostrativo">
             </aside>
         </article>
         <h3>O que eu sei fazer.</h3>
-        <h2>Habilidades</h2>
+        <h2 class="entrada-lateral">Habilidades</h2>
         <article id="habilidades">
             <aside class="container-projeto-destaque">
+                <img src="img/sistema-noticia.png" alt="Projeto-destaque">
                 <h3>Conhecimento em prática</h3>
                 <p>Veja meu melhor projeto em execução, na qual eu coloco em prática todas as minhas habilidades.</p>
                 <div>
@@ -76,7 +78,7 @@
             </section>
         </article>
         <h3>O que eu consigo utilizar.</h3>
-        <h2>Tecnologias</h2>
+        <h2 class="entrada-lateral">Tecnologias</h2>
         <article id="tecnologias">
             <section class="container-tecnologias">
                 <div class="tecnologia">
@@ -122,11 +124,11 @@
             </section>
         </article>
         <h3>O que eu desenvolvi.</h3>
-        <h2>Meus Projetos</h2>
+        <h2 class="entrada-lateral">Meus Projetos</h2>
         <article id="projetos">
             <section class="container-projetos">
                 <div class="projeto">
-                    <a href="https://gustavosachetto.github.io/Desafio-frontend/" target="_blank"><img src="img/desafio-frontend.png" alt="Desafio-Frontend"></a>
+                    <img src="img/desafio-frontend.png" alt="Desafio-Frontend">
                     <h4>Desafio Front-end</h4>
                     <ul class="lista-detalhes-projeto">
                         <li>
@@ -142,9 +144,10 @@
                             <span>13/10/2023</span>
                         </li>
                     </ul>
+                    <a href="https://gustavosachetto.github.io/Desafio-frontend/" target="_blank">Acessar</a>
                 </div>
                 <div class="projeto">
-                    <a href="https://gustavosachettocruz.000webhostapp.com/index.php" target="_blank"><img src="img/sistema-noticia.png" alt="Sistema-cadastro"></a>
+                    <img src="img/sistema-noticia.png" alt="Sistema-cadastro">
                     <h4>Cadastro Notícia</h4>
                     <ul class="lista-detalhes-projeto">
                         <li class="detalhe-tecnologia">
@@ -160,9 +163,10 @@
                             <span>03/10/2023</span>
                         </li>
                     </ul>
+                    <a href="https://gustavosachettocruz.000webhostapp.com/index.php" target="_blank">Acessar</a>
                 </div>
                 <div class="projeto">
-                    <a href="https://gustavosachetto.github.io/Pixchel/" target="_blank"><img src="img/pixchel.png" alt="Pixchel"></a>
+                    <img src="img/pixchel.png" alt="Pixchel">
                     <h4>Pixchel</h4>
                     <ul class="lista-detalhes-projeto">
                         <li>
@@ -180,9 +184,10 @@
                             <span>28/09/2023</span>
                         </li>
                     </ul>
+                    <a href="https://gustavosachetto.github.io/Pixchel/" target="_blank">Acessar</a>
                 </div>
                 <div class="projeto">
-                    <a href="https://gustavosachetto.github.io/Labirinto-jogo/index.html" target="_blank"><img src="img/labirinto-jogo.png" alt="Labirinto-Jogo"></a>
+                    <img src="img/labirinto-jogo.png" alt="Labirinto-Jogo">
                     <h4>Labirinto Jogo</h4>
                     <ul class="lista-detalhes-projeto">
                         <li>
@@ -198,18 +203,15 @@
                             <span>10/09/2023</span>
                         </li>
                     </ul>
+                    <a href="https://gustavosachetto.github.io/Labirinto-jogo/index.html" target="_blank">Acessar</a>
                 </div>
                 <div class="projeto">
-                    <a href="https://gustavosachetto.000webhostapp.com/" target="_blank"><img src="img/projeto-php.png" alt="Projeto-PHP"></a>
+                    <img src="img/projeto-php.png" alt="Projeto-PHP">
                     <h4>Projeto-PHP</h4>
                     <ul class="lista-detalhes-projeto">
                         <li>
                             <strong class="detalhe-tecnologia">Tecnologias:</strong>
                             <span>HTML, CSS, Bootstrap, Javascript e PHP.</span>
-                        </li>
-                        <li>
-                            <strong class="detalhe-participacao">Participação:</strong>
-                            <span>Esse projeto foi realizado em trio, apreciando a performance do trabalho em grupo.</span>
                         </li>
                         <li>
                             <strong class="detalhe-resumo">Resumo:</strong>
@@ -218,13 +220,20 @@
                             </span>
                         </li>
                         <li>
+                            <mark>
+                                <strong class="detalhe-participacao">Participação:</strong>
+                                <span>Esse projeto foi realizado em trio. Apreciando a performance do trabalho em equipe.</span>
+                            </mark>
+                        </li>
+                        <li>
                             <strong class="detalhe-data">Data:</strong>
                             <span>05/08/2023</span>
                         </li>
                     </ul>
+                    <a href="https://gustavosachetto.000webhostapp.com/" target="_blank">Acessar</a>
                 </div>
                 <div class="projeto">
-                    <a href="https://gustavosachetto.github.io/Site-Android/" target="_blank"><img src="img/site-android.png" alt="Site-android"></a>
+                    <img src="img/site-android.png" alt="Site-android">
                     <h4>Site-Android</h4>
                     <ul class="lista-detalhes-projeto">
                         <li>
@@ -240,6 +249,7 @@
                             <span>14/07/2023</span>
                         </li>
                     </ul>
+                    <a href="https://gustavosachetto.github.io/Site-Android/" target="_blank">Acessar</a>
                 </div>
             </section>
         </article>
