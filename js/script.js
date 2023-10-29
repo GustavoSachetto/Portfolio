@@ -62,3 +62,19 @@ if (entradaLateral != null) {
 
     elementosTxt2.forEach(elemento => observadorTxt2.observe(elemento));
 }
+
+const entradaImagem = document.querySelector('.entrada-imagem');
+
+if (entradaImagem != null) {
+    const observadorImg = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('img-entrando-lateral');
+            }
+        });
+    });
+
+    const elementosImg = document.querySelectorAll('.entrada-imagem');
+
+    elementosImg.forEach(elemento => observadorImg.observe(elemento));
+}

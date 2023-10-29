@@ -186,6 +186,19 @@ section.container-sobre > h2 {
     line-height: 100px;
 }
 
+.img-demostrativa {
+    animation: entrando-imagem-desmostrativa 1.3s linear;
+}
+
+@keyframes entrando-imagem-desmostrativa {
+    from {
+        opacity: 20%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
 .text-digitando {
     animation: digitando 1.3s linear infinite;
 }
@@ -328,12 +341,12 @@ section.container-tecnologias {
     justify-content: space-between;
 }
 
-section.container-tecnologias:hover div:not(:hover) {
+section.container-tecnologias:hover a:not(:hover) {
     transform: scale(0.9);
     opacity: 70%;
 }
 
-section div.tecnologia {
+section a.tecnologia {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -341,13 +354,28 @@ section div.tecnologia {
     transition: 100ms;
 }
 
-section div.tecnologia img {
+section a.tecnologia img {
     width: 60px;
 }
 
-section div.tecnologia legend {
+section a.tecnologia legend {
     margin: 10px;
     font-size: 19px;
+    color: var(--cor-preta);
+}
+
+.img-entrando-lateral {
+    animation: img-entrando-lateral 1.6s linear;
+}
+
+@keyframes img-entrando-lateral {
+    0%, 100% {
+        opacity: 100%;
+    }
+
+    60% {
+        opacity: 40%;
+    }
 }
 
 article#projetos {}
@@ -373,7 +401,7 @@ section div.projeto img {
 section div.projeto h4 {
     color: var(--cor-cinza-escuro);
     font: bold 34px var(--font-destaque);
-    margin: 15px 0;
+    margin: 32px 0 20px 0;
 }
 
 section ul {
