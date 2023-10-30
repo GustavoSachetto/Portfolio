@@ -15,7 +15,7 @@
 }
 
 :root {
-    --cor-marrom: #8d6456;
+    --cor-marrom: #c09284;
     --cor-branca: #FFFFFF;
     --cor-preta: #161616;
     --cor-cinza: #a6afb9;
@@ -30,6 +30,10 @@
     --font-titulo: 'Fugaz', 'cursive', 'Arial', sans-serif;
     --font-padrao: 'Inter', Arial, sans-serif;
     --font-destaque:'Josefin Sans', 'Inter', 'Arial', sans-serif;
+}
+
+:target {
+    scroll-margin-top: 260px;
 }
 
 ::selection {
@@ -288,6 +292,7 @@ h3 {
 
 article#habilidades {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -298,8 +303,48 @@ aside.container-projeto-destaque {
     justify-content: center;
     text-align: center;
     border-radius: 7px;
+    padding: 25px;
     box-shadow: 1px 1px 10px #00000042;
     background-color: var(--cor-marrom);
+}
+
+aside.container-projeto-destaque img {
+    border-radius: 7px;
+}
+
+aside.container-projeto-destaque h3 {
+    font: bold 32px var(--font-destaque);
+    margin: 20px 0 13px 0;
+}
+
+aside.container-projeto-destaque p {
+    margin-bottom: 30px;
+}
+
+aside.container-projeto-destaque div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+aside.container-projeto-destaque div > a {
+    color: var(--cor-cinza-escuro);
+    padding: 12px 23px;
+    border-radius: 24px;
+    border: 1px solid var(--cor-cinza-escuro);
+    transition: 150ms ease-in;
+}
+
+aside.container-projeto-destaque div > .acessar:hover {
+    color: var(--cor-marrom);
+    border-color: var(--cor-azul);
+    background-color: var(--cor-azul);
+}
+
+aside.container-projeto-destaque div > .repositorio:hover {
+    color: var(--cor-marrom);
+    border-color: var(--cor-cinza-escuro);
+    background-color: var(--cor-cinza-escuro);
 }
 
 section.container-habilidades {
@@ -307,7 +352,7 @@ section.container-habilidades {
     gap: 30px;
     grid-template-rows: 3fr 9fr 2fr;
     grid-template-columns: 3fr 5fr;
-    width: 55%;
+    width: 52%;
     height: 480px;
 }
 
@@ -338,6 +383,7 @@ article#tecnologias {}
 
 section.container-tecnologias {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -352,6 +398,7 @@ section a.tecnologia {
     align-items: center;
     cursor: pointer;
     transition: 100ms;
+    margin: 10px 0;
 }
 
 section a.tecnologia img {
