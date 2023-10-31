@@ -75,6 +75,14 @@ if (entradaImagem != null) {
     });
 
     const elementosImg = document.querySelectorAll('.entrada-imagem');
-
+    
     elementosImg.forEach(elemento => observadorImg.observe(elemento));
 }
+
+const tecnologias = document.querySelectorAll('.tecnologia');
+    
+tecnologias.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+        document.querySelector('.mensagem').style.display = 'none';
+    });
+});

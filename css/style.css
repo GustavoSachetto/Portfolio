@@ -15,6 +15,7 @@
 }
 
 :root {
+    --cor-beje: #E0C09D;
     --cor-marrom: #c09284;
     --cor-branca: #FFFFFF;
     --cor-preta: #161616;
@@ -383,7 +384,9 @@ section div.habilidade > p {
     line-height: 26px;
 }
 
-article#tecnologias {}
+article#tecnologias {
+    margin-bottom: 160px;
+}
 
 section.container-tecnologias {
     display: flex;
@@ -392,7 +395,7 @@ section.container-tecnologias {
 }
 
 section.container-tecnologias:hover a:not(:hover) {
-    transform: scale(0.9);
+    transform: scale(0.85);
     opacity: 70%;
 }
 
@@ -410,9 +413,28 @@ section a.tecnologia img {
 }
 
 section a.tecnologia legend {
-    margin: 10px;
+    margin: 10px 0 20px 0;
     font-size: 19px;
     color: var(--cor-preta);
+}
+
+section a.tecnologia > div.mensagem span {
+    position: absolute;
+    margin: 14px 0 0 -40px;
+    padding: 16px 20px;
+    color: var(--cor-cinza-escuro);
+    border: 1px solid var(--cor-cinza-escuro);
+    background: var(--cor-beje);
+    transition: 160ms ease-in-out;
+    border-radius: 10px 23px;
+}
+
+section a.tecnologia > div.mensagem span::after {
+    content: "▲";
+    position: absolute;
+    left: 25px;
+    top: -24px;
+    font-size: 28px;
 }
 
 .img-entrando-lateral {
@@ -478,7 +500,7 @@ section div.projeto a {
 }
 
 section div.projeto a:hover{
-    box-shadow: 0 4px 5px #0000005b;
+    box-shadow: 0 4px 5px #00000073;
 }
 
 section div.projeto a:active{
