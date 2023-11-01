@@ -79,7 +79,7 @@ if (entradaImagem != null) {
     elementosImg.forEach(elemento => observadorImg.observe(elemento));
 }
 
-const tecnologias = document.querySelectorAll('.tecnologia');
+const tecnologias = document.querySelectorAll('.container-tecnologias');
     
 tecnologias.forEach(link => {
     link.addEventListener('mouseenter', () => {

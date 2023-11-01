@@ -465,7 +465,7 @@ section div.projeto {
     margin-bottom: 50px;
 }
 
-section div.projeto img {
+section div.projeto > img {
     width: 100%;
     border-radius: 7px;
     box-shadow: var(--sombra-img-padrao);
@@ -491,7 +491,12 @@ section div.projeto ul > li mark {
     background: transparent;
 }
 
-section div.projeto a {
+div.nav-projeto {
+    display: flex;
+    align-items: center;
+}
+
+section .nav-projeto > a.acessar-projeto {
     color: var(--cor-branca);
     padding: 15px 32px;
     border-radius: 7px;
@@ -499,12 +504,17 @@ section div.projeto a {
     transition: 250ms ease-in-out;
 }
 
-section div.projeto a:hover{
+section .nav-projeto a.acessar-projeto:hover{
     box-shadow: 0 4px 5px #00000073;
 }
 
-section div.projeto a:active{
+section .nav-projeto a.acessar-projeto:active{
     background-color: var(--cor-verde);
+}
+
+section .nav-projeto .repositorio-projeto img {
+    width: 30px;
+    margin-left: 10px;
 }
 
 article#contato {
