@@ -451,7 +451,9 @@ section a.tecnologia > div.mensagem span::after {
     }
 }
 
-article#projetos {}
+article#projetos {
+    margin-bottom: 0;
+}
 
 section.container-projetos {
     display: flex;
