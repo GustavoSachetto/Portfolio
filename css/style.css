@@ -16,7 +16,7 @@
 
 :root {
     --cor-beje: #E0C09D;
-    --cor-marrom: #c09284;
+    --cor-marrom: #ceaaa0;
     --cor-branca: #FFFFFF;
     --cor-preta: #161616;
     --cor-cinza: #a6afb9;
@@ -402,7 +402,7 @@ section a.tecnologia {
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    transition: 100ms;
+    transition: 230ms ease-in-out;
     margin: 10px 0;
 }
 
