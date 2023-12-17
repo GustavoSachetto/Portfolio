@@ -13,13 +13,17 @@
 <body>
     <header>
         <h1><mark>G</mark>ustavo <mark>S</mark>achetto</h1>
-        <button id="menu">Menu</button>
+        <div id="menuResponsivo" class="menu-responsivo">
+            <div id="linha1" class="linha1"></div>
+            <div id="linha2" class="linha2"></div>
+            <div id="linha3" class="linha3"></div>
+        </div>
         <button id="btn-topo"><img src="img/seta-cima.png" alt=""></button>
         <nav>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#tecnologias">Tecnologias</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#contato" class="especial">Contato</a>
+            <a href="#habilidades" onclick="clickLink()">Habilidades</a>
+            <a href="#tecnologias" onclick="clickLink()">Tecnologias</a>
+            <a href="#projetos" onclick="clickLink()">Projetos</a>
+            <a href="#contato" class="especial" onclick="clickLink()">Contato</a>
         </nav>
     </header>
     <main>

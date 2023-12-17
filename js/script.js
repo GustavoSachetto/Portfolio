@@ -1,8 +1,30 @@
 const element = document.querySelector('#text-desenvolvedor');
 const text = "Desenvolvedor Full-Stack";
 
+const menuResponsivo = document.querySelector('#menuResponsivo');
+const nav = document.querySelector('nav');
+
+menuResponsivo.addEventListener('click', () => {
+    menuResponsivo.classList.toggle('ativo');
+    nav.classList.toggle('ativo');
+
+    if (nav.classList.contains('ativo')) {
+        window.scrollTo(0,0);
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = 'auto';
+    }
+});
+
+function clickLink() {
+    menuResponsivo.classList.remove('ativo');
+    nav.classList.remove('ativo');   
+    document.body.style.overflow = 'auto';
+}
+
+
 if (element != null) {
-    function trocandoTexto(elementoIndex, text) {
+    function trocandoTexto(element, text) {
         const caracters = text.split("").reverse();
         const digitando = setInterval(() => {
             
