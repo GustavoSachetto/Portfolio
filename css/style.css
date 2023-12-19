@@ -704,6 +704,7 @@ footer {
 }
 
 @media (max-width:1070px) {
+
     .menu-responsivo {
         display: block;
     }
@@ -731,5 +732,41 @@ footer {
 
     nav > a {
         color: var(--cor-branca);
+    }
+
+    article#sobre {
+        padding: 40px 30px;
+        text-align: center;
+    }
+
+    section.container-sobre {
+        width: 100%;
+    }
+
+    section.container-sobre > h2 {
+        font-size: 52px;
+        position: relative;
+        height: auto;
+    }
+
+    section.container-sobre > p {
+        margin: 0;
+    }
+
+    aside.container-imagem-demostrativa {
+        display: none;
+    }
+
+    .container-redes {
+        width: 100%;
+        margin-top: 28px;
+    }
+
+    section.container-titulo mark:nth-child(2)::after {
+        content: ".";
+    }
+
+    section.container-titulo span {
+        display: none;
     }
 }
