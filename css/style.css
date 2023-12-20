@@ -863,12 +863,16 @@ footer {
     }
 
     article#sobre {
-        padding: 25px 15px;
+        padding: 30px 20px;
     }
 
     section.container-sobre > h2 {
         font-size: 40px;
-        line-height: 60px;
+        line-height: 70px;
+    }
+
+    section.container-sobre > p {
+        margin-bottom: 35px;
     }
 
     aside.container-projeto-destaque, section.container-habilidades {
@@ -912,6 +916,6 @@ footer {
 @media (max-width:540px) {
     section.container-sobre > h2 {
         margin: 0 20px;
-        height: 120px;
+        height: 150px;
     }
 }
