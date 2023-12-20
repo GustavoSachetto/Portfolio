@@ -863,7 +863,7 @@ footer {
     }
 
     article#sobre {
-        padding: 30px 15px;
+        padding: 30px 20px;
     }
 
     section.container-sobre > h2 {
@@ -915,7 +915,6 @@ footer {
 
 @media (max-width:540px) {
     section.container-sobre > h2 {
-        margin: 0 20px;
         height: 150px;
     }
 }
