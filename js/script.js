@@ -105,6 +105,9 @@ const tecnologias = document.querySelectorAll('.tecnologia');
     
 tecnologias.forEach(link => {
     link.addEventListener('mouseenter', () => {
-        document.querySelector('.mensagem').style.display = 'none';
+        document.querySelector('.mensagem').classList.add('desativado');
+        setTimeout(() => {
+            document.querySelector('.mensagem').style.display = 'none';
+        }, 600);
     });
 });

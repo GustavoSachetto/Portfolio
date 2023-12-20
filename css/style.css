@@ -319,6 +319,7 @@ section.container-sobre > p {
 .container-redes img {
     width: 36px;
     margin-right: 15px;
+    transition: 250ms ease-in-out;
 }
 
 aside.container-imagem-demostrativa {
@@ -438,8 +439,7 @@ section.container-tecnologias {
 }
 
 section.container-tecnologias:has(a:hover) a:not(:hover) {
-    transform: scale(0.85);
-    opacity: 70%;
+    opacity: 60%;
 }
 
 section a.tecnologia {
@@ -447,12 +447,16 @@ section a.tecnologia {
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    transition: 230ms ease-in-out;
+    transition: 260ms ease-in-out;
     margin: 10px 0;
 }
 
+section a.tecnologia:hover {
+    scale: 1.1;
+}
+
 section a.tecnologia img {
-    width: 60px;
+    width: 58px;
 }
 
 section a.tecnologia legend {
@@ -462,14 +466,15 @@ section a.tecnologia legend {
 }
 
 section a.tecnologia > div.mensagem span {
+    width: 590px;
     position: absolute;
     margin: 14px 0 0 -40px;
     padding: 16px 20px;
     color: var(--cor-cinza-escuro);
     border: 1px solid var(--cor-cinza-escuro);
     background: var(--cor-beje);
-    transition: 160ms ease-in-out;
     border-radius: 10px 23px;
+    opacity: 100%;
 }
 
 section a.tecnologia > div.mensagem span::after {
@@ -478,6 +483,11 @@ section a.tecnologia > div.mensagem span::after {
     left: 25px;
     top: -24px;
     font-size: 28px;
+}
+
+section a.tecnologia > div.mensagem.desativado {
+    opacity: 0;
+    transition: 0.6s ease-in-out;
 }
 
 .img-entrando-lateral {
@@ -853,11 +863,12 @@ footer {
     }
 
     article#sobre {
-        padding: 20px 10px;
+        padding: 25px 15px;
     }
 
     section.container-sobre > h2 {
         font-size: 40px;
+        line-height: 60px;
     }
 
     aside.container-projeto-destaque, section.container-habilidades {
@@ -895,5 +906,12 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+}
+
+@media (max-width:540px) {
+    section.container-sobre > h2 {
+        margin: 0 22px;
+        height: 120px;
     }
 }
