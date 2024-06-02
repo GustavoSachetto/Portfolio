@@ -16,13 +16,13 @@
 
 :root {
     --cor-beje: #E0C09D;
-    --cor-marrom: #ceaaa0;
+    --cor-marrom: #b18f87;
     --cor-branca: #FFFFFF;
     --cor-preta: #161616;
     --cor-cinza: #a6afb9;
     --cor-cinza-escuro: #202020;
-    --cor-azul-claro: #547bee;
-    --cor-azul: #45578d;
+    --cor-azul-claro: #4472fa;
+    --cor-azul: #374388;
     --cor-vermelho: #c23a3a;
     --cor-verde: #4ed63c;
 
@@ -389,6 +389,12 @@ aside.container-projeto-destaque div > a {
 
 aside.container-projeto-destaque div > .acessar:hover {
     color: var(--cor-marrom);
+    border-color: var(--cor-azul-claro);
+    background-color: var(--cor-azul-claro);
+}
+
+aside.container-projeto-destaque div > .descricao:hover {
+    color: var(--cor-marrom);
     border-color: var(--cor-azul);
     background-color: var(--cor-azul);
 }
@@ -537,8 +543,17 @@ section ul {
 }
 
 section div.projeto ul > li {
-    margin: 10px 0;
-    font-size: 19px;
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+section div.projeto ul > li > span strong {
+    font-weight: normal;
+    color: var(--cor-azul-claro);
+}
+
+section div.projeto ul > li.detalhe-tecnologia > span {
+    font-size: 16px;
 }
 
 section div.projeto ul > li mark {
