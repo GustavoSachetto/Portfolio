@@ -522,7 +522,7 @@ section.container-projetos {
 
 section div.projeto {
     width: 31%;
-    height: 620px;
+    height: 630px;
     margin-bottom: 50px;
 }
 
@@ -575,6 +575,7 @@ section .nav-projeto > a.acessar-projeto {
 }
 
 section .nav-projeto a.acessar-projeto:hover{
+    cursor: pointer;
     box-shadow: 0 4px 5px #00000073;
 }
 
@@ -582,9 +583,43 @@ section .nav-projeto a.acessar-projeto:active{
     background-color: var(--cor-verde);
 }
 
+section .nav-projeto button {
+    cursor: pointer;
+    background: transparent;
+}
+
+section .nav-projeto img  {
+    transition: 260ms ease-in-out;
+}
+
+section .nav-projeto img:hover {
+    scale: 1.08;
+}
+
+section .nav-projeto .assistir-projeto img {
+    width: 40px;
+    margin-left: 12px;
+}
+
 section .nav-projeto .repositorio-projeto img {
     width: 30px;
     margin-left: 10px;
+}
+
+section div.video-projeto {
+    margin-top: 10px;
+    position: relative;  
+    padding: 26.7% 50%; 
+}
+
+section div.video-projeto iframe {
+    position: absolute;
+    top: 2.5%;
+    left: 5%;
+    width: 90%;
+    height: 95%;
+    border-radius: 7px;
+    box-shadow: var(--sombra-card);
 }
 
 article#contato {

@@ -15,7 +15,10 @@
 
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+
     <script src="js/script.js" defer></script>
+    <script src="js/modal.js" defer></script>
 </head>
 <body>
     <header>
@@ -154,6 +157,51 @@
         <article id="projetos">
             <section class="container-projetos">
                 <div class="projeto">
+                    <img src="img/projetos/Good-tech.png" alt="Good-tech">
+                    <h4>Good-tech</h4>
+                    <ul class="lista-detalhes-projeto">
+                        <li class="detalhe-tecnologia entrada-padrao">
+                            <strong>Tecnologias:</strong>
+                            <span>PHP, HTML, CSS e MySQL.</span>
+                        </li>
+                        <li class="detalhe-resumo entrada-padrao">
+                            <strong>Resumo:</strong>
+                            <span>
+                               Blog baseado em acessibilidade digital, trazendo também documentos e pesquisas sobre análise de projeto (<strong>análise de requisitos, diagrama de caso de uso, EAP, guia de estilos, etc</strong>).
+                            </span>
+                        </li>
+                        <li class="detalhe-participacao entrada-padrao text-entrando">
+                            <mark>
+                                <strong>Participação:</strong>
+                                <span>Esse projeto foi realizado em quarteto.</span>
+                            </mark>
+                        </li>
+                        <li class="detalhe-data entrada-padrao">
+                            <strong>Data:</strong>
+                            <span>25/06/2024</span>
+                        </li>
+                    </ul>
+                    <div class="nav-projeto">
+                        <a data-modal-target="goodTech" target="_blank" class="acessar-projeto">Assistir</a>
+                        <div class="assistir-video">
+                            <button data-modal-target="goodTech" class="assistir-projeto">
+                                <img src="img/icones/youtube.png" alt="youtube" class="entrada-imagem">
+                            </button>
+                            <div class="modal" id="goodTech">
+                                <div class="modal-content">
+                                  <span class="modal-close">&times;</span>
+                                  <div class="video-projeto">
+                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/KKn-VgKxHW0" title="Good-tech" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://github.com/GustavoSachetto/Good-tech" target="_blank" class="repositorio-projeto">
+                            <img src="img/icones/github.svg" alt="Github" class="entrada-imagem">
+                        </a>
+                    </div>
+                </div>
+                <div class="projeto">
                     <img src="img/projetos/My-cars.png" alt="My-cars">
                     <h4>My-cars</h4>
                     <ul class="lista-detalhes-projeto">
@@ -173,7 +221,20 @@
                         </li>
                     </ul>
                     <div class="nav-projeto">
-                        <a href="" target="_blank" class="acessar-projeto">Assistir</a>
+                        <a data-modal-target="myCars" target="_blank" class="acessar-projeto">Assistir</a>
+                        <div class="assistir-video">
+                            <button data-modal-target="myCars" class="assistir-projeto">
+                                <img src="img/icones/youtube.png" alt="youtube" class="entrada-imagem">
+                            </button>
+                            <div class="modal" id="myCars">
+                                <div class="modal-content">
+                                  <span class="modal-close">&times;</span>
+                                  <div class="video-projeto">
+                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/csxekGBHy88" title="My-cars" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
                         <a href="https://github.com/GustavoSachetto/My-cars" target="_blank" class="repositorio-projeto"><img src="img/icones/github.svg" alt="Github" class="entrada-imagem"></a>
                     </div>
                 </div>
@@ -197,17 +258,30 @@
                         </li>
                     </ul>
                     <div class="nav-projeto">
-                        <a href="" target="_blank" class="acessar-projeto">Assistir</a>
+                        <a data-modal-target="phpPuro" target="_blank" class="acessar-projeto">Assistir</a>
+                        <div class="assistir-video">
+                            <button data-modal-target="phpPuro" class="assistir-projeto">
+                                <img src="img/icones/youtube.png" alt="youtube" class="entrada-imagem">
+                            </button>
+                            <div class="modal" id="phpPuro">
+                                <div class="modal-content">
+                                  <span class="modal-close">&times;</span>
+                                  <div class="video-projeto">
+                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/wJAtSC4jcg0" title="Php-puro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
                         <a href="https://github.com/GustavoSachetto/Php-puro" target="_blank" class="repositorio-projeto"><img src="img/icones/github.svg" alt="Github" class="entrada-imagem"></a>
                     </div>
                 </div>
                 <div class="projeto">
-                    <img src="img/projetos/Crud POO.png" alt="Api-carros">
+                    <img src="img/projetos/Crud POO.png" alt="Crud-POO">
                     <h4>Crud-POO</h4>
                     <ul class="lista-detalhes-projeto">
                         <li class="detalhe-tecnologia entrada-padrao">
                             <strong>Tecnologias:</strong>
-                            <span>PHP, HTML e BOOTSTRAP.</span>
+                            <span>PHP, HTML, BOOTSTRAP e MySQL.</span>
                         </li>
                         <li class="detalhe-resumo entrada-padrao">
                             <strong>Resumo:</strong>
@@ -228,11 +302,24 @@
                     </ul>
                     <div class="nav-projeto">
                         <a href="https://gustavosachettoapi.000webhostapp.com/" target="_blank" class="acessar-projeto">Acessar</a>
+                        <div class="assistir-video">
+                            <button data-modal-target="crudPoo" class="assistir-projeto">
+                                <img src="img/icones/youtube.png" alt="youtube" class="entrada-imagem">
+                            </button>
+                            <div class="modal" id="crudPoo">
+                                <div class="modal-content">
+                                  <span class="modal-close">&times;</span>
+                                  <div class="video-projeto">
+                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/FA7Rynnj3ik" title="Crud-POO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
                         <a href="https://github.com/GustavoSachetto/Crud-POO" target="_blank" class="repositorio-projeto"><img src="img/icones/github.svg" alt="Github" class="entrada-imagem"></a>
                     </div>
                 </div>
                 <div class="projeto">
-                    <img src="img/projetos/Huddle.png" alt="Api-carros">
+                    <img src="img/projetos/Huddle.png" alt="Huddle">
                     <h4>Huddle</h4>
                     <ul class="lista-detalhes-projeto">
                         <li class="detalhe-tecnologia entrada-padrao">
@@ -252,6 +339,19 @@
                     </ul>
                     <div class="nav-projeto">
                         <a href="https://gustavosachetto.github.io/Huddle/" target="_blank" class="acessar-projeto">Acessar</a>
+                        <div class="assistir-video">
+                            <button data-modal-target="huddle" class="assistir-projeto">
+                                <img src="img/icones/youtube.png" alt="youtube" class="entrada-imagem">
+                            </button>
+                            <div class="modal" id="huddle">
+                                <div class="modal-content">
+                                  <span class="modal-close">&times;</span>
+                                  <div class="video-projeto">
+                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/fp0RsW14aho" title="Huddle" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
                         <a href="https://github.com/GustavoSachetto/Huddle" target="_blank" class="repositorio-projeto"><img src="img/icones/github.svg" alt="Github" class="entrada-imagem"></a>
                     </div>
                 </div>
@@ -275,7 +375,20 @@
                         </li>
                     </ul>
                     <div class="nav-projeto">
-                        <a href="" class="acessar-projeto">Assistir</a>
+                        <a data-modal-target="apiCarros" class="acessar-projeto">Assistir</a>
+                        <div class="assistir-video">
+                            <button data-modal-target="apiCarros" class="assistir-projeto">
+                                <img src="img/icones/youtube.png" alt="youtube" class="entrada-imagem">
+                            </button>
+                            <div class="modal" id="apiCarros">
+                                <div class="modal-content">
+                                  <span class="modal-close">&times;</span>
+                                  <div class="video-projeto">
+                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/E8ZIusSnyXM" title="Api-carros" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
                         <a href="https://github.com/GustavoSachetto/Api-carros" target="_blank" class="repositorio-projeto"><img src="img/icones/github.svg" alt="Github" class="entrada-imagem"></a>
                     </div>
                 </div>
@@ -300,6 +413,19 @@
                     </ul>
                     <div class="nav-projeto">
                         <a href="https://gustavosachetto.github.io/Desafio-paises/" target="_blank" class="acessar-projeto">Acessar</a>
+                        <div class="assistir-video">
+                            <button data-modal-target="desafioPaises" class="assistir-projeto">
+                                <img src="img/icones/youtube.png" alt="youtube" class="entrada-imagem">
+                            </button>
+                            <div class="modal" id="desafioPaises">
+                                <div class="modal-content">
+                                  <span class="modal-close">&times;</span>
+                                  <div class="video-projeto">
+                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/6H6QEheK0Dc" title="Desafio-paises" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
                         <a href="https://github.com/GustavoSachetto/Desafio-paises" target="_blank" class="repositorio-projeto"><img src="img/icones/github.svg" alt="Github" class="entrada-imagem"></a>
                     </div>
                 </div>
@@ -324,11 +450,24 @@
                     </ul>
                     <div class="nav-projeto">
                         <a href="https://sv-gustavo-sachetto.000webhostapp.com/" target="_blank" class="acessar-projeto">Acessar</a>
+                        <div class="assistir-video">
+                            <button data-modal-target="sistemaVenda" class="assistir-projeto">
+                                <img src="img/icones/youtube.png" alt="youtube" class="entrada-imagem">
+                            </button>
+                            <div class="modal" id="sistemaVenda">
+                                <div class="modal-content">
+                                  <span class="modal-close">&times;</span>
+                                  <div class="video-projeto">
+                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/wUUNYxw__so" title="Sistema-venda" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
                         <a href="https://github.com/GustavoSachetto/Sistema-venda" target="_blank" class="repositorio-projeto"><img src="img/icones/github.svg" alt="Github" class="entrada-imagem"></a>
                     </div>
                 </div>
                 <div class="projeto">
-                    <img src="img/projetos/Busca CEP.png" alt="Desafio-Frontend">
+                    <img src="img/projetos/Busca CEP.png" alt="Buscador-cep">
                     <h4>Buscador CEP</h4>
                     <ul class="lista-detalhes-projeto">
                         <li class="detalhe-tecnologia entrada-padrao">
@@ -348,6 +487,19 @@
                     </ul>
                     <div class="nav-projeto">
                         <a href="https://gustavosachetto.github.io/Consumo-API/" target="_blank" class="acessar-projeto">Acessar</a>
+                        <div class="assistir-video">
+                            <button data-modal-target="buscadorCep" class="assistir-projeto">
+                                <img src="img/icones/youtube.png" alt="youtube" class="entrada-imagem">
+                            </button>
+                            <div class="modal" id="buscadorCep">
+                                <div class="modal-content">
+                                  <span class="modal-close">&times;</span>
+                                  <div class="video-projeto">
+                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/UrRixxmELN0" title="Buscador-cep" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
                         <a href="https://github.com/GustavoSachetto/Consumo-API" target="_blank" class="repositorio-projeto"><img src="img/icones/github.svg" alt="Github" class="entrada-imagem"></a>
                     </div>
                 </div>
@@ -372,6 +524,19 @@
                     </ul>
                     <div class="nav-projeto">
                         <a href="https://gustavosachetto.github.io/Desafio-frontend/" target="_blank" class="acessar-projeto">Acessar</a>
+                        <div class="assistir-video">
+                            <button data-modal-target="desafioFrontend" class="assistir-projeto">
+                                <img src="img/icones/youtube.png" alt="youtube" class="entrada-imagem">
+                            </button>
+                            <div class="modal" id="desafioFrontend">
+                                <div class="modal-content">
+                                  <span class="modal-close">&times;</span>
+                                  <div class="video-projeto">
+                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/0MgBr9DYda4" title="Desafio-Frontend" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
                         <a href="https://github.com/GustavoSachetto/Desafio-frontend" target="_blank" class="repositorio-projeto"><img src="img/icones/github.svg" alt="Github" class="entrada-imagem"></a>
                     </div>
                 </div>
@@ -395,6 +560,19 @@
                     </ul>
                     <div class="nav-projeto">
                         <a href="https://gustavosachettocruz.000webhostapp.com/index.php" target="_blank" class="acessar-projeto">Acessar</a>
+                        <div class="assistir-video">
+                            <button data-modal-target="cadastroNoticia" class="assistir-projeto">
+                                <img src="img/icones/youtube.png" alt="youtube" class="entrada-imagem">
+                            </button>
+                            <div class="modal" id="cadastroNoticia">
+                                <div class="modal-content">
+                                  <span class="modal-close">&times;</span>
+                                  <div class="video-projeto">
+                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/W4iFzOq5Ets" title="Cadastro-notícia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
                         <a href="https://github.com/GustavoSachetto/Sistema-cadastro" target="_blank" class="repositorio-projeto"><img src="img/icones/github.svg" alt="Github" class="entrada-imagem"></a>
                     </div>
                 </div>
@@ -420,6 +598,19 @@
                     </ul>
                     <div class="nav-projeto">
                         <a href="https://gustavosachetto.github.io/Pixchel/" target="_blank" class="acessar-projeto">Acessar</a>
+                        <div class="assistir-video">
+                            <button data-modal-target="pixchel" class="assistir-projeto">
+                                <img src="img/icones/youtube.png" alt="youtube" class="entrada-imagem">
+                            </button>
+                            <div class="modal" id="pixchel">
+                                <div class="modal-content">
+                                  <span class="modal-close">&times;</span>
+                                  <div class="video-projeto">
+                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/itRI6mhvUwI" title="Pixchel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
                         <a href="https://github.com/GustavoSachetto/Pixchel" target="_blank" class="repositorio-projeto"><img src="img/icones/github.svg" alt="Github" class="entrada-imagem"></a>
                     </div>
                 </div>
@@ -442,6 +633,19 @@
                     </ul>
                     <div class="nav-projeto">
                         <a href="https://gustavosachetto.github.io/Labirinto-jogo/index.html" target="_blank" class="acessar-projeto">Acessar</a>
+                        <div class="assistir-video">
+                            <button data-modal-target="labirintoJogo" class="assistir-projeto">
+                                <img src="img/icones/youtube.png" alt="youtube" class="entrada-imagem">
+                            </button>
+                            <div class="modal" id="labirintoJogo">
+                                <div class="modal-content">
+                                  <span class="modal-close">&times;</span>
+                                  <div class="video-projeto">
+                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/OLFMqKfmH5E" title="Labirinto-Jogo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
                         <a href="https://github.com/GustavoSachetto/Labirinto-jogo" target="_blank" class="repositorio-projeto"><img src="img/icones/github.svg" alt="Github" class="entrada-imagem"></a>
                     </div>
                 </div>
@@ -473,6 +677,19 @@
                     </ul>
                     <div class="nav-projeto">
                         <a href="https://gustavosachetto.000webhostapp.com/" target="_blank" class="acessar-projeto">Acessar</a>
+                        <div class="assistir-video">
+                            <button data-modal-target="projetoPhp" class="assistir-projeto">
+                                <img src="img/icones/youtube.png" alt="youtube" class="entrada-imagem">
+                            </button>
+                            <div class="modal" id="projetoPhp">
+                                <div class="modal-content">
+                                  <span class="modal-close">&times;</span>
+                                  <div class="video-projeto">
+                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/fqnMoTJhvJ8" title="Projeto PHP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
                         <a href="https://github.com/GustavoSachetto/Projeto-PHP" target="_blank" class="repositorio-projeto"><img src="img/icones/github.svg" alt="Github" class="entrada-imagem"></a>
                     </div>
                 </div>
@@ -498,6 +715,19 @@
                     </ul>
                     <div class="nav-projeto">
                         <a href="https://gustavosachetto.github.io/Site-Android/" target="_blank" class="acessar-projeto">Acessar</a>
+                        <div class="assistir-video">
+                            <button data-modal-target="siteAndroid" class="assistir-projeto">
+                                <img src="img/icones/youtube.png" alt="youtube" class="entrada-imagem">
+                            </button>
+                            <div class="modal" id="siteAndroid">
+                                <div class="modal-content">
+                                  <span class="modal-close">&times;</span>
+                                  <div class="video-projeto">
+                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/s9Rw4VFzBJU" title="Site android" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
                         <a href="https://github.com/GustavoSachetto/Site-Android" target="_blank" class="repositorio-projeto"><img src="img/icones/github.svg" alt="Github" class="entrada-imagem"></a>
                     </div>
                 </div>
