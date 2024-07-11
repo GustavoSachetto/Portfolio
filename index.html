@@ -16,15 +16,11 @@
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/modal.css">
-
+    
     <script src="js/script.js" defer></script>
     <script src="js/modal.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function(){
-            $('iframe').attr('src', 'iframe_url');    
-        });
-    </script>
+    <script src="js/iframe-defer.js"></script>
 </head>
 <body>
     <header>
@@ -195,10 +191,8 @@
                             </button>
                             <div class="modal" id="goodTech">
                                 <div class="modal-content">
-                                  <span class="modal-close">&times;</span>
-                                  <div class="video-projeto">
-                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/KKn-VgKxHW0" title="Good-tech" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                  </div>
+                                    <span class="modal-close">&times;</span>
+                                    <div class="defer-iframe video-projeto" data-src="https://www.youtube.com/embed/KKn-VgKxHW0" data-title="Good-tech"></div>
                                 </div>
                             </div>
                         </div>
@@ -234,10 +228,8 @@
                             </button>
                             <div class="modal" id="myCars">
                                 <div class="modal-content">
-                                  <span class="modal-close">&times;</span>
-                                  <div class="video-projeto">
-                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/csxekGBHy88" title="My-cars" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                  </div>
+                                    <span class="modal-close">&times;</span>
+                                    <div class="defer-iframe video-projeto" data-src="https://www.youtube.com/embed/csxekGBHy88" data-title="My-cars"></div>
                                 </div>
                             </div>
                         </div>
@@ -271,10 +263,8 @@
                             </button>
                             <div class="modal" id="phpPuro">
                                 <div class="modal-content">
-                                  <span class="modal-close">&times;</span>
-                                  <div class="video-projeto">
-                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/wJAtSC4jcg0" title="Php-puro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                  </div>
+                                    <span class="modal-close">&times;</span>
+                                    <div class="defer-iframe video-projeto" data-src="https://www.youtube.com/embed/wJAtSC4jcg0" data-title="Php-puro"></div>
                                 </div>
                             </div>
                         </div>
@@ -314,10 +304,8 @@
                             </button>
                             <div class="modal" id="crudPoo">
                                 <div class="modal-content">
-                                  <span class="modal-close">&times;</span>
-                                  <div class="video-projeto">
-                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/FA7Rynnj3ik" title="Crud-POO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                  </div>
+                                    <span class="modal-close">&times;</span>
+                                    <div class="defer-iframe video-projeto" data-src="https://www.youtube.com/embed/FA7Rynnj3ik" data-title="Crud-POO"></div>
                                 </div>
                             </div>
                         </div>
@@ -351,10 +339,8 @@
                             </button>
                             <div class="modal" id="huddle">
                                 <div class="modal-content">
-                                  <span class="modal-close">&times;</span>
-                                  <div class="video-projeto">
-                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/fp0RsW14aho" title="Huddle" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                  </div>
+                                    <span class="modal-close">&times;</span>
+                                    <div class="defer-iframe video-projeto" data-src="https://www.youtube.com/embed/fp0RsW14aho" data-title="Huddle"></div>
                                 </div>
                             </div>
                         </div>
@@ -388,10 +374,8 @@
                             </button>
                             <div class="modal" id="apiCarros">
                                 <div class="modal-content">
-                                  <span class="modal-close">&times;</span>
-                                  <div class="video-projeto">
-                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/E8ZIusSnyXM" title="Api-carros" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                  </div>
+                                    <span class="modal-close">&times;</span>
+                                    <div class="defer-iframe video-projeto" data-src="https://www.youtube.com/embed/E8ZIusSnyXM" data-title="Api-carros"></div>
                                 </div>
                             </div>
                         </div>
@@ -425,10 +409,8 @@
                             </button>
                             <div class="modal" id="desafioPaises">
                                 <div class="modal-content">
-                                  <span class="modal-close">&times;</span>
-                                  <div class="video-projeto">
-                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/6H6QEheK0Dc" title="Desafio-paises" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                  </div>
+                                    <span class="modal-close">&times;</span>
+                                    <div class="defer-iframe video-projeto" data-src="https://www.youtube.com/embed/6H6QEheK0Dc" data-title="Desafio-paises"></div>
                                 </div>
                             </div>
                         </div>
@@ -462,10 +444,8 @@
                             </button>
                             <div class="modal" id="sistemaVenda">
                                 <div class="modal-content">
-                                  <span class="modal-close">&times;</span>
-                                  <div class="video-projeto">
-                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/wUUNYxw__so" title="Sistema-venda" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                  </div>
+                                    <span class="modal-close">&times;</span>
+                                    <div class="defer-iframe video-projeto" data-src="https://www.youtube.com/embed/wUUNYxw__so" data-title="Sistema-venda"></div>
                                 </div>
                             </div>
                         </div>
@@ -499,10 +479,8 @@
                             </button>
                             <div class="modal" id="buscadorCep">
                                 <div class="modal-content">
-                                  <span class="modal-close">&times;</span>
-                                  <div class="video-projeto">
-                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/UrRixxmELN0" title="Buscador-cep" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                  </div>
+                                    <span class="modal-close">&times;</span>
+                                    <div class="defer-iframe video-projeto" data-src="https://www.youtube.com/embed/UrRixxmELN0" data-title="Buscador-cep"></div>
                                 </div>
                             </div>
                         </div>
@@ -536,10 +514,8 @@
                             </button>
                             <div class="modal" id="desafioFrontend">
                                 <div class="modal-content">
-                                  <span class="modal-close">&times;</span>
-                                  <div class="video-projeto">
-                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/0MgBr9DYda4" title="Desafio-Frontend" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                  </div>
+                                    <span class="modal-close">&times;</span>
+                                    <div class="defer-iframe video-projeto" data-src="https://www.youtube.com/embed/0MgBr9DYda4" data-title="Desafio-Frontend"></div>
                                 </div>
                             </div>
                         </div>
@@ -572,10 +548,8 @@
                             </button>
                             <div class="modal" id="cadastroNoticia">
                                 <div class="modal-content">
-                                  <span class="modal-close">&times;</span>
-                                  <div class="video-projeto">
-                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/W4iFzOq5Ets" title="Cadastro-notícia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                  </div>
+                                    <span class="modal-close">&times;</span>
+                                    <div class="defer-iframe video-projeto" data-src="https://www.youtube.com/embed/W4iFzOq5Ets" data-title="Cadastro-notícia"></div>
                                 </div>
                             </div>
                         </div>
@@ -610,10 +584,8 @@
                             </button>
                             <div class="modal" id="pixchel">
                                 <div class="modal-content">
-                                  <span class="modal-close">&times;</span>
-                                  <div class="video-projeto">
-                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/itRI6mhvUwI" title="Pixchel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                  </div>
+                                    <span class="modal-close">&times;</span>
+                                    <div class="defer-iframe video-projeto" data-src="https://www.youtube.com/embed/itRI6mhvUwI" data-title="Pixchel"></div>
                                 </div>
                             </div>
                         </div>
@@ -645,10 +617,8 @@
                             </button>
                             <div class="modal" id="labirintoJogo">
                                 <div class="modal-content">
-                                  <span class="modal-close">&times;</span>
-                                  <div class="video-projeto">
-                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/OLFMqKfmH5E" title="Labirinto-Jogo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                  </div>
+                                    <span class="modal-close">&times;</span>
+                                    <div class="defer-iframe video-projeto" data-src="https://www.youtube.com/embed/OLFMqKfmH5E" data-title="Labirinto-Jogo"></div>
                                 </div>
                             </div>
                         </div>
@@ -689,10 +659,8 @@
                             </button>
                             <div class="modal" id="projetoPhp">
                                 <div class="modal-content">
-                                  <span class="modal-close">&times;</span>
-                                  <div class="video-projeto">
-                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/fqnMoTJhvJ8" title="Projeto PHP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                  </div>
+                                    <span class="modal-close">&times;</span>
+                                    <div class="defer-iframe video-projeto" data-src="https://www.youtube.com/embed/fqnMoTJhvJ8" data-title="Projeto PHP"></div>
                                 </div>
                             </div>
                         </div>
@@ -727,10 +695,8 @@
                             </button>
                             <div class="modal" id="siteAndroid">
                                 <div class="modal-content">
-                                  <span class="modal-close">&times;</span>
-                                  <div class="video-projeto">
-                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/s9Rw4VFzBJU" title="Site android" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                  </div>
+                                    <span class="modal-close">&times;</span>
+                                    <div class="defer-iframe video-projeto" data-src="https://www.youtube.com/embed/s9Rw4VFzBJU" data-title="Site android"></div>
                                 </div>
                             </div>
                         </div>
