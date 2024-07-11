@@ -5,9 +5,11 @@ const modalCloseButtons = document.querySelectorAll(".modal-close");
 modalTriggerButtons.forEach(elem => {
   elem.addEventListener("click", event => toggleModal(event.currentTarget.getAttribute("data-modal-target")));
 });
+
 modalCloseButtons.forEach(elem => {
   elem.addEventListener("click", event => toggleModal(event.currentTarget.closest(".modal").id));
 });
+
 modals.forEach(elem => {
   elem.addEventListener("click", event => {
     if(event.currentTarget === event.target) toggleModal(event.currentTarget.id);
