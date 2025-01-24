@@ -6,21 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Gustavo Sachetto é um Desenvolvedor Full stack onde busca sempre o aperfeiçoamento profissional no ramo técnologico.">
     <meta name="author" content="Gustavo Sachetto">
-    <meta name="keywords" content="tecnologia, portfolio dev, sachetto, portfolio, gustavo sachetto">
+    <meta name="keywords" content="gustavo sachetto, sachetto, desenvolvedor, laravel, php, react">
     <meta name="robots" content="index,follow">
     <meta property="og:region" content="Brasil">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <meta http-equiv="content-language" content="pt-br">
+    <meta name="google-site-verification" content="ndY92o6ZeWEv1Ia6xp5xYESS37AS8axm_b8PcDisY1s">
     
     <title>Gustavo Sachetto | Desenvolvedor Full stack</title>
 
+    <link rel="canonical" href="https://gustavosachetto.site">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     
+    <script src="assets/js/swiper.js" defer></script>
     <script src="assets/js/script.js" defer></script>
     <script src="assets/js/modal.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="assets/js/iframe-defer.js"></script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FGJ6QW4D8"></script>
+    <script src="assets/js/google-analytics.js"></script>
 </head>
 <body>
     <header>
@@ -30,12 +41,12 @@
             <div id="linha2" class="linha2"></div>
             <div id="linha3" class="linha3"></div>
         </div>
-        <button id="btn-topo"><img src="assets/img/icones/seta-cima.png" alt=""></button>
+        <button id="btn-topo"><img src="assets/img/icones/seta-cima.png" alt="Seta Cima"></button>
         <nav>
-            <a href="#habilidades" onclick="clickLink()">Habilidades</a>
-            <a href="#tecnologias" onclick="clickLink()">Tecnologias</a>
-            <a href="#projetos" onclick="clickLink()">Projetos</a>
-            <a href="#contato" class="especial" onclick="clickLink()">Contato</a>
+            <a href="#certificados" rel="noreferrer" onclick="clickLink()">Certificados</a>
+            <a href="#tecnologias" rel="noreferrer" onclick="clickLink()">Tecnologias</a>
+            <a href="#projetos" rel="noreferrer" onclick="clickLink()">Projetos</a>
+            <a href="#contato" rel="noreferrer" class="especial" onclick="clickLink()">Contato</a>
         </nav>
     </header>
     <main>
@@ -43,108 +54,293 @@
             <section class="container-sobre">
                 <h2><span id="text-desenvolvedor"></span><span class="text-digitando">|</span></h2>
                 <p class="entrada-padrao">
-                    Bem-vindo, me chamo Gustavo e sou desenvolvedor Full Stack. Possuo diversas experiências utilizando <strong>Laravel, PHP, React, Javascript, MySQL, Jquery e Bootstrap.</strong> Além de habilidades em edição de imagem, vídeo e texto.
+                    Bem-vindo, me chamo Gustavo Sachetto, tenho 18 anos e sou desenvolvedor Full Stack. Possuo diversas experiências utilizando <strong>Laravel, PHP, React, Javascript e MySQL.</strong> Além de habilidades em edição de imagem, vídeo e texto.
                 </p>
                 <div class="container-redes">
-                    <a href="https://www.linkedin.com/in/gustavo-sachetto/" target="_blank"><img src="assets/img/icones/linkedin.svg" alt="Linkedin"></a>
-                    <!-- <a href="assets/docs/curriculo.pdf" target="_blank"><img src="assets/img/curriculo.svg" alt="Curriculo"></a> -->
-                    <a href="https://github.com/GustavoSachetto" target="_blank"><img src="assets/img/icones/github.svg" alt="Github"></a>
+                    <a href="https://www.linkedin.com/in/gustavo-sachetto/" rel="author" target="_blank"><img src="assets/img/icones/linkedin.svg" alt="Linkedin"></a>
+                    <a href="assets/docs/curriculo_GustavoSachetto.pdf" rel="author" target="_blank"><img src="assets/img/icones/curriculo.svg" alt="Curriculo"></a>
+                    <a href="https://github.com/GustavoSachetto" rel="author" target="_blank"><img src="assets/img/icones/github.svg" alt="Github"></a>
                 </div>
             </section>
             <aside class="container-imagem-demostrativa">
-                <img src="assets/img/dispositivo.png" alt="Demostrativo" class="img-demostrativa">
+                <img src="assets/img/dispositivo.png" alt="Demostrativo dispositivo" class="img-demostrativa">
             </aside>
         </article>
-        <h3>O que eu sei fazer.</h3>
-        <h2 class="entrada-lateral">Habilidades</h2>
-        <article id="habilidades">
-            <aside class="container-projeto-destaque">
-                <img src="assets/img/projetos/Api-carros.png" alt="Projeto-destaque">
-                <h3>Competência</h3>
-                <p>Veja um dos meus melhores projeto em execução, onde eu expresso todas as minhas habilidades em prática.</p>
-                <div>
-                    <a href="https://www.postman.com/api-carros-gs/workspace/api-carros-developer-workspace" target="_blank" class="descricao">Acessar</a>
-                    <a href="https://github.com/GustavoSachetto/Api-carros" target="_blank" class="repositorio">Repositório</a>
-                </div>
-            </aside>
-            <section class="container-habilidades">
-                <div class="habilidade">
-                    <img src="assets/img/icones/responsivo.png" alt="Demostrativo-layout">
-                    <h3>Criar e Replicar layouts</h3>
+        <h3>O que eu já estudei.</h3>
+        <h2>Certificados</h2>
+        <article id="certificados">
+            <section class="estudos">
+                <div class="sobre">
+                    <h3>Sobre</h3>
                     <p class="entrada-padrao">
-                        Um site atrativo e responsivo é fundamental para navegação do usuário, prezando sempre a
-                        usabilidade.
+                        Criei esse site para exibição dos meus melhores projetos desenvolvidos de junho de 2023 até agora. Ao lado estão alguns certificados de conclusão dos cursos extracurriculares que realizei, e abaixo está a minha formação acadêmica. Fique à vontade para explorar todos os meus projetos em funcionamento!
                     </p>
                 </div>
-                <div class="habilidade">
-                    <img src="assets/img/icones/interatividade.png" alt="Demostrativo-interatividade">
-                    <h3>Desenvolver Interatividade</h3>
-                    <p class="entrada-padrao">
-                       Interatividade ao site é necessário para que o usuário exerça uma boa comunicação com ele, de forma que o traga uma melhor experiência.
-                    </p>
-                </div>
-                <div class="habilidade">
-                    <img src="assets/img/icones/sistema.png" alt="Demostrativo-sistema">
-                    <h3>Elaborar Sistemas web</h3>
-                    <p class="entrada-padrao">
-                        Todo site precisa de um controle amplo sobre seus usuários ou até mesmo clientes, através disto
-                        é possível elaborar um sistema que organize toda essa informação.
-                    </p>
-                </div>
-                <div class="habilidade">
-                    <img src="assets/img/icones/banco-dados.png" alt="Demostrativo-banco">
-                    <h3>Gerenciar Banco de dados</h3>
-                    <p class="entrada-padrao">
-                        Por trás do site é preciso armazenar informações, por exemplo: dados do cliente, relatório de
-                        vendas ou até mesmo notícias recentes.
-                    </p>
+                <div class="linha-do-tempo">
+                    <h3>Formações</h3>
+                    <ul class="lista-formacao-academica">
+                        <li class="entrada-padrao">
+                            <strong>Curso Técnico, Técnico de Informática para Internet</strong>
+                            <p>Jan 2022 - Dez 2024</p>
+                            <p>ETEC - Dr Emilio Hernandez Aguilar</p>
+                        </li>
+                    </ul>
                 </div>
             </section>
+            <aside class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div id="slide1" class="swiper-slide">
+                        <a href="assets/docs/certificados/SDY9U2.pdf" target="_blank">
+                            <img src="assets/img/certificados/Basico Formação em Cibersegurança.png" alt="Basico Formação em Cibersegurança">
+                            <span class="texto-click-intuitivo">Click para abrir o certificado</span>
+                        </a>
+                        <ul class="lista-detalhes-certificado">
+                            <li>
+                                <strong>Curso:</strong> 
+                                <span>Básico Formação em Cibersegurança</span>
+                            </li>
+                            <li>
+                                <strong>Instituição:</strong> 
+                                <span>Senai - SP (Plataforma Hackers do Bem)</span>
+                            </li>
+                            <li>
+                                <strong>Duração:</strong> 
+                                <span>64 Horas</span>
+                            </li>
+                            <li>
+                                <strong>Conclusão:</strong> 
+                                <span>2025</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="slide2" class="swiper-slide">
+                        <a href="assets/docs/certificados/FG1Y94.pdf" target="_blank">
+                            <img src="assets/img/certificados/Nivelamento Formação em Cibersegurança.png" alt="Nivelamento Formação em Cibersegurança">
+                            <span class="texto-click-intuitivo">Click para abrir o certificado</span>
+                        </a>
+                        <ul class="lista-detalhes-certificado">
+                            <li>
+                                <strong>Curso:</strong> 
+                                <span>Nivelamento Formação em Cibersegurança</span>
+                            </li>
+                            <li>
+                                <strong>Instituição:</strong> 
+                                <span>Senai - SP (Plataforma Hackers do Bem)</span>
+                            </li>
+                            <li>
+                                <strong>Duração:</strong> 
+                                <span>80 Horas</span>
+                            </li>
+                            <li>
+                                <strong>Conclusão:</strong> 
+                                <span>2025</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="slide3" class="swiper-slide">
+                            <a href="assets/docs/certificados/FF348TH.pdf" target="_blank">
+                                <img src="assets/img/certificados/Estrutura de dados.png" alt="Estrutura de dados">
+                                <span class="texto-click-intuitivo">Click para abrir o certificado</span>
+                            </a>
+                        <ul class="lista-detalhes-certificado">
+                            <li>
+                                <strong>Curso:</strong> 
+                                <span>Estrutura de Dados</span>
+                            </li>
+                            <li>
+                                <strong>Instituição:</strong> 
+                                <span>Instituto Federal Rio Grande do Sul</span>
+                            </li>
+                            <li>
+                                <strong>Duração:</strong> 
+                                <span>20 Horas</span>
+                            </li>
+                            <li>
+                                <strong>Conclusão:</strong> 
+                                <span>2024</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="slide4" class="swiper-slide">
+                        <a href="assets/docs/certificados/0SKSDFJKD1.pdf" target="_blank">
+                            <img src="assets/img/certificados/Banco de dados.png" alt="Banco de dados">
+                            <span class="texto-click-intuitivo">Click para abrir o certificado</span>
+                        </a>
+                      
+                        <ul class="lista-detalhes-certificado">
+                            <li>
+                                <strong>Curso:</strong> 
+                                <span>Banco de Dados 1: fundamentos</span>
+                            </li>
+                            <li>
+                                <strong>Instituição:</strong> 
+                                <span>Instituto Federal Rio Grande do Sul</span>
+                            </li>
+                            <li>
+                                <strong>Duração:</strong> 
+                                <span>20 Horas</span>
+                            </li>
+                            <li>
+                                <strong>Conclusão:</strong> 
+                                <span>2024</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="slide5" class="swiper-slide">
+                        <a href="assets/docs/certificados/JSA93DAS.pdf" target="_blank">
+                            <img src="assets/img/certificados/Projeto de Sistemas Web.png" alt="Projeto de Sistemas Web">
+                            <span class="texto-click-intuitivo">Click para abrir o certificado</span>
+                        </a>
+                        <ul class="lista-detalhes-certificado">
+                            <li>
+                                <strong>Curso:</strong> 
+                                <span>Projeto de Sistemas Web</span>
+                            </li>
+                            <li>
+                                <strong>Instituição:</strong> 
+                                <span>Instituto Federal Rio Grande do Sul</span>
+                            </li>
+                            <li>
+                                <strong>Duração:</strong> 
+                                <span>30 Horas</span>
+                            </li>
+                            <li>
+                                <strong>Conclusão:</strong> 
+                                <span>2024</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="slide6" class="swiper-slide">
+                        <a href="assets/docs/certificados/IFH3FG4.pdf" target="_blank">
+                            <img src="assets/img/certificados/Logica de Programacao.png" alt="Logica de Programacao">
+                            <span class="texto-click-intuitivo">Click para abrir o certificado</span>
+                        </a>
+                        <ul class="lista-detalhes-certificado">
+                            <li>
+                                <strong>Curso:</strong> 
+                                <span>Lógica de Programação: múltiplos valores e módulos</span>
+                            </li>
+                            <li>
+                                <strong>Instituição:</strong> 
+                                <span>Instituto Federal Rio Grande do Sul</span>
+                            </li>
+                            <li>
+                                <strong>Duração:</strong> 
+                                <span>20 Horas</span>
+                            </li>
+                            <li>
+                                <strong>Conclusão:</strong> 
+                                <span>2024</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="slide7" class="swiper-slide">
+                        <a href="assets/docs/certificados/HTT5YS.pdf" target="_blank">
+                            <img src="assets/img/certificados/Curso HTML e CSS Modulo 1.png" alt="Curso HTML e CSS">
+                            <span class="texto-click-intuitivo">Click para abrir o certificado</span>
+                        </a>
+                        <ul class="lista-detalhes-certificado">
+                            <li>
+                                <strong>Curso:</strong> 
+                                <span>Curso HTML5 e CSS3: Modulo 1</span>
+                            </li>
+                            <li>
+                                <strong>Instituição:</strong> 
+                                <span>Curso em video</span>
+                            </li>
+                            <li>
+                                <strong>Duração:</strong> 
+                                <span>40 Horas</span>
+                            </li>
+                            <li>
+                                <strong>Conclusão:</strong> 
+                                <span>2023</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="slide8" class="swiper-slide">
+                        <a href="assets/docs/certificados/SK3DHGD.pdf" target="_blank">
+                            <img src="assets/img/certificados/Git e Github.png" alt="Git e Github">
+                            <span class="texto-click-intuitivo">Click para abrir o certificado</span>
+                        </a>
+                        <ul class="lista-detalhes-certificado">
+                            <li>
+                                <strong>Curso:</strong> 
+                                <span>Git e Github</span>
+                            </li>
+                            <li>
+                                <strong>Instituição:</strong> 
+                                <span>Curso em video</span>
+                            </li>
+                            <li>
+                                <strong>Duração:</strong> 
+                                <span>20 Horas</span>
+                            </li>
+                            <li>
+                                <strong>Conclusão:</strong> 
+                                <span>2023</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </aside>
         </article>
         <h3>O que eu consigo utilizar.</h3>
         <h2 class="entrada-lateral">Tecnologias</h2>
         <article id="tecnologias">
             <section class="container-tecnologias">
-                <a href="https://github.com/GustavoSachetto?tab=repositories&q=laravel&type=&language=&sort=" target="_blank" class="tecnologia">
+                <a href="https://github.com/GustavoSachetto?tab=repositories&q=laravel&type=&language=&sort=" rel="nofollow" target="_blank" class="tecnologia">
                     <img src="assets/img/tecnologias/laravel.svg" alt="LARAVEL" class="entrada-imagem">
                     <legend>Laravel</legend>
                     <div class="mensagem">
                         <span>Clique na linguagem para <strong>ver os projetos</strong> em que mais se utilizou ela.</span>
                     </div>
                 </a>
-                <a href="https://github.com/GustavoSachetto?tab=repositories&q=php&type=&language=&sort=" target="_blank" class="tecnologia">
-                    <img src="assets/img/tecnologias/php.svg" alt="PHP" class="entrada-imagem">
-                    <legend>Php</legend>
-                </a>
-                <a href="https://github.com/GustavoSachetto?tab=repositories&q=reactjs&type=&language=&sort=" target="_blank" class="tecnologia">
+                <a href="https://github.com/GustavoSachetto?tab=repositories&q=reactjs&type=&language=&sort=" rel="nofollow" target="_blank" class="tecnologia">
                     <img src="assets/img/tecnologias/react.svg" alt="REACT" class="entrada-imagem">
                     <legend>React</legend>
                 </a>
-                <a href="https://github.com/GustavoSachetto?tab=repositories&q=javascript&type=&language=&sort=" target="_blank" class="tecnologia">
-                    <img src="assets/img/tecnologias/js.png" alt="JS" class="entrada-imagem">
+                <a href="https://github.com/GustavoSachetto?tab=repositories&q=php&type=&language=&sort=" target="_blank" rel="nofollow" class="tecnologia">
+                    <img src="assets/img/tecnologias/php.svg" alt="PHP" class="entrada-imagem">
+                    <legend>Php</legend>
+                </a>
+                <a href="https://github.com/GustavoSachetto?tab=repositories&q=typescript&type=&language=&sort=" rel="nofollow" target="_blank" class="tecnologia">
+                    <img src="assets/img/tecnologias/typescript.svg" alt="TS" class="entrada-imagem">
+                    <legend>TypeScript</legend>
+                </a>
+                <a href="https://github.com/GustavoSachetto?tab=repositories&q=javascript&type=&language=&sort=" rel="nofollow" target="_blank" class="tecnologia">
+                    <img src="assets/img/tecnologias/js.png" alt="JS" style="border-radius: 6px;" class="entrada-imagem">
                     <legend>JavaScript</legend>
                 </a>
-                <a href="https://github.com/GustavoSachetto?tab=repositories&q=mysql&type=&language=&sort=" target="_blank" class="tecnologia">
+                <a href="https://github.com/GustavoSachetto?tab=repositories&q=mysql&type=&language=&sort=" rel="nofollow" target="_blank" class="tecnologia">
                     <img src="assets/img/tecnologias/mysql.png" alt="MYSQL" class="entrada-imagem">
                     <legend>Mysql</legend>
                 </a>
-                <a href="https://github.com/GustavoSachetto?tab=repositories&q=bootstrap&type=&language=&sort=" target="_blank" class="tecnologia">
+                <a href="https://github.com/GustavoSachetto?tab=repositories&q=bootstrap&type=&language=&sort=" rel="nofollow" target="_blank" class="tecnologia">
                     <img src="assets/img/tecnologias/bootstrap.png" alt="BOOTSTRAP" class="entrada-imagem">
                     <legend>Bootstrap</legend>
                 </a>
-                <a href="https://github.com/GustavoSachetto?tab=repositories&q=sass&type=&language=&sort=" target="_blank" class="tecnologia">
+                <a href="https://github.com/GustavoSachetto?tab=repositories&q=sass&type=&language=&sort=" rel="nofollow" target="_blank" class="tecnologia">
                     <img src="assets/img/tecnologias/sass.png" alt="SASS" class="entrada-imagem">
                     <legend>Sass</legend>
                 </a>
-                <a href="https://github.com/GustavoSachetto?tab=repositories&q=jquery&type=&language=&sort=" target="_blank" class="tecnologia">
+                <a href="https://github.com/GustavoSachetto?tab=repositories&q=jquery&type=&language=&sort=" rel="nofollow" target="_blank" class="tecnologia">
                     <img src="assets/img/tecnologias/jquery.png" alt="JQUERY" class="entrada-imagem">
                     <legend>Jquery</legend>
                 </a>
-                <a href="https://github.com/GustavoSachetto?tab=repositories&q=html5&type=&language=&sort=" target="_blank" class="tecnologia">
+                <a href="https://github.com/GustavoSachetto?tab=repositories&q=html5&type=&language=&sort=" rel="nofollow" target="_blank" class="tecnologia">
                     <img src="assets/img/tecnologias/html.png" alt="HTML5" class="entrada-imagem">
                     <legend>Html</legend>
                 </a>
-                <a href="https://github.com/GustavoSachetto?tab=repositories&q=css3&type=&language=&sort=" target="_blank" class="tecnologia">
+                <a href="https://github.com/GustavoSachetto?tab=repositories&q=css3&type=&language=&sort=" rel="nofollow" target="_blank" class="tecnologia">
                     <img src="assets/img/tecnologias/css.png" alt="CSS3" class="entrada-imagem">
                     <legend>Css</legend>
                 </a>
@@ -159,12 +355,147 @@
         <article id="projetos">
             <section class="container-projetos">
                 <div class="projeto">
+                    <img src="assets/img/projetos/Jogo da velha.png" alt="Jogo da velha">
+                    <h4>Jogo da Velha</h4>
+                    <ul class="lista-detalhes-projeto">
+                        <li class="detalhe-tecnologia entrada-padrao">
+                            <strong>Tecnologias:</strong>
+                            <mark>React</mark>
+                            <mark>Socket.io</mark>
+                            <mark>Node JS</mark>
+                            <mark>Typescript</mark>
+                            <mark>Styled-components</mark>
+                        </li>
+                        <li class="detalhe-resumo entrada-padrao">
+                            <strong>Resumo:</strong>
+                            <span>
+                                Jogo da velha criado com a tecnologia do <strong>web socket</strong> que permite a comunicação em tempo real do navegador com o servidor, na qual nesse projeto é possivel criar uma sala para jogar com outro amigo simultaneamente.
+                            </span>
+                        </li>
+                        <li class="detalhe-data entrada-padrao">
+                            <strong>Data:</strong>
+                            <span>13/01/2025</span>
+                        </li>
+                    </ul>
+                    <div class="nav-projeto">
+                        <a href="https://github.com/GustavoSachetto/Jogo-da-velha" rel="nofollow" target="_blank" class="acessar-projeto">Acessar</a>
+                        <div class="assistir-video">
+                            <button data-modal-target="jogodaVelha" class="assistir-projeto">
+                                <img src="assets/img/icones/youtube.png" alt="youtube" class="entrada-imagem">
+                            </button>
+                            <div class="modal" id="jogodaVelha">
+                                <div class="modal-content">
+                                    <span class="modal-close">&times;</span>
+                                    <div class="defer-iframe video-projeto" data-src="https://www.youtube.com/embed/sBc9-0cz2rk" data-title="Jogo da Velha"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://github.com/GustavoSachetto/Jogo-da-velha" rel="nofollow" target="_blank" class="repositorio-projeto">
+                            <img src="assets/img/icones/github.svg" alt="Github" class="entrada-imagem">
+                        </a>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="assets/img/projetos/School-System.png" alt="School-System">
+                    <h4>School-System</h4>
+                    <ul class="lista-detalhes-projeto">
+                        <li class="detalhe-tecnologia entrada-padrao">
+                            <strong>Tecnologias:</strong>
+                            <mark>Laravel</mark>
+                            <mark>Php</mark>
+                            <mark>React</mark>
+                            <mark>Typescript</mark>
+                            <mark>Inertia JS</mark>
+                            <mark>Styled-components</mark>
+                            <mark>MySQL</mark>
+                            <mark>Mercado-pago</mark>
+                        </li>
+                        <li class="detalhe-resumo entrada-padrao">
+                            <strong>Resumo:</strong>
+                            <span>
+                                Plataforma digital de ensino criada para a venda de cursos online de programação, onde foi implementado <strong>pagamento por pix</strong> através do banco digital Mercado Pago.
+                            </span>
+                        </li>
+                        <li class="detalhe-data entrada-padrao">
+                            <strong>Data:</strong>
+                            <span>05/12/2024</span>
+                        </li>
+                    </ul>
+                    <div class="nav-projeto">
+                        <a href="https://schoolsystem.shop" rel="nofollow" target="_blank" class="acessar-projeto">Acessar</a>
+                        <div class="assistir-video">
+                            <button data-modal-target="schoolsystem" class="assistir-projeto">
+                                <img src="assets/img/icones/youtube.png" alt="youtube" class="entrada-imagem">
+                            </button>
+                            <div class="modal" id="schoolsystem">
+                                <div class="modal-content">
+                                    <span class="modal-close">&times;</span>
+                                    <div class="defer-iframe video-projeto" data-src="https://www.youtube.com/embed/Bb55CyzGua8" data-title="School-System"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://github.com/GustavoSachetto/School-System" rel="nofollow" target="_blank" class="repositorio-projeto">
+                            <img src="assets/img/icones/github.svg" alt="Github" class="entrada-imagem">
+                        </a>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="assets/img/projetos/API-TaskTea.png" alt="API-TaskTea">
+                    <h4>Api-TaskTea</h4>
+                    <ul class="lista-detalhes-projeto">
+                        <li class="detalhe-tecnologia entrada-padrao">
+                            <strong>Tecnologias:</strong>
+                            <mark>Laravel</mark>
+                            <mark>Php</mark>
+                            <mark>Composer</mark>
+                            <mark>MySQL</mark>
+                            <mark>Desenvolvimento-API</mark>
+                        </li>
+                        <li class="detalhe-resumo entrada-padrao">
+                            <strong>Resumo:</strong>
+                            <span>
+                                Este projeto consiste numa <strong>api-restfull</strong> criada com o <strong>framework Laravel</strong> para gerenciamento do banco de dados do aplicativo <strong>TaskTEA</strong>.
+                            </span>
+                        </li>
+                        <li class="detalhe-participacao entrada-padrao text-entrando">
+                            <mark>
+                                <strong>Participação:</strong>
+                                <span>Esse projeto foi realizado em grupo.</span>
+                            </mark>
+                        </li>
+                        <li class="detalhe-data entrada-padrao">
+                            <strong>Data:</strong>
+                            <span>12/11/2024</span>
+                        </li>
+                    </ul>
+                    <div class="nav-projeto">
+                        <a href="https://taskteaapi.com/api/v1" rel="nofollow" target="_blank" class="acessar-projeto">Acessar</a>
+                        <div class="assistir-video">
+                            <button data-modal-target="apiTaskTea" class="assistir-projeto">
+                                <img src="assets/img/icones/youtube.png" alt="youtube" class="entrada-imagem">
+                            </button>
+                            <div class="modal" id="apiTaskTea">
+                                <div class="modal-content">
+                                    <span class="modal-close">&times;</span>
+                                    <div class="defer-iframe video-projeto" data-src="https://www.youtube.com/embed/t7kwhfyRMys" data-title="API-TaskTea"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://github.com/GustavoSachetto/API-TaskTea" rel="nofollow" target="_blank" class="repositorio-projeto">
+                            <img src="assets/img/icones/github.svg" alt="Github" class="entrada-imagem">
+                        </a>
+                    </div>
+                </div>
+                <div class="projeto">
                     <img src="assets/img/projetos/Focal-point.png" alt="Focal-point">
                     <h4>Desafio-legaplan</h4>
                     <ul class="lista-detalhes-projeto">
                         <li class="detalhe-tecnologia entrada-padrao">
                             <strong>Tecnologias:</strong>
-                            <span>TYPESCRIPT, REACT, NEXT e SASS.</span>
+                            <mark>React</mark>
+                            <mark>Next JS</mark>
+                            <mark>TypeScript</mark>
+                            <mark>Sass</mark>
                         </li>
                         <li class="detalhe-resumo entrada-padrao">
                             <strong>Resumo:</strong>
@@ -178,7 +509,7 @@
                         </li>
                     </ul>
                     <div class="nav-projeto">
-                        <a href="https://desafio-legaplan-ten.vercel.app" target="_blank" class="acessar-projeto">Acessar</a>
+                        <a href="https://desafio-legaplan-ten.vercel.app" rel="nofollow" target="_blank" class="acessar-projeto">Acessar</a>
                         <div class="assistir-video">
                             <button data-modal-target="desafioLegaplan" class="assistir-projeto">
                                 <img src="assets/img/icones/youtube.png" alt="youtube" class="entrada-imagem">
@@ -190,7 +521,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="https://github.com/GustavoSachetto/Desafio-legaplan" target="_blank" class="repositorio-projeto">
+                        <a href="https://github.com/GustavoSachetto/Desafio-legaplan" rel="nofollow" target="_blank" class="repositorio-projeto">
                             <img src="assets/img/icones/github.svg" alt="Github" class="entrada-imagem">
                         </a>
                     </div>
@@ -201,7 +532,11 @@
                     <ul class="lista-detalhes-projeto">
                         <li class="detalhe-tecnologia entrada-padrao">
                             <strong>Tecnologias:</strong>
-                            <span>PHP, HTML, CSS e MySQL.</span>
+                            <mark>Php</mark>
+                            <mark>JavaScript</mark>
+                            <mark>HTML</mark>
+                            <mark>CSS</mark>
+                            <mark>MySQL</mark>
                         </li>
                         <li class="detalhe-resumo entrada-padrao">
                             <strong>Resumo:</strong>
@@ -221,7 +556,7 @@
                         </li>
                     </ul>
                     <div class="nav-projeto">
-                        <a href="https://gustavosachetto.site/good-tech" target="_blank" class="acessar-projeto">Acessar</a>
+                        <a href="https://gustavosachetto.site/good-tech" rel="external" target="_blank" class="acessar-projeto">Acessar</a>
                         <div class="assistir-video">
                             <button data-modal-target="goodTech" class="assistir-projeto">
                                 <img src="assets/img/icones/youtube.png" alt="youtube" class="entrada-imagem">
@@ -233,7 +568,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="https://github.com/GustavoSachetto/Good-tech" target="_blank" class="repositorio-projeto">
+                        <a href="https://github.com/GustavoSachetto/Good-tech" rel="nofollow" target="_blank" class="repositorio-projeto">
                             <img src="assets/img/icones/github.svg" alt="Github" class="entrada-imagem">
                         </a>
                     </div>
@@ -244,7 +579,12 @@
                     <ul class="lista-detalhes-projeto">
                         <li class="detalhe-tecnologia entrada-padrao">
                             <strong>Tecnologias:</strong>
-                            <span>REACT, JAVASCRIPT, BOOTSTRAP e AXIOS.</span>
+                            <mark>React</mark>
+                            <mark>JavaScript</mark>
+                            <mark>CSS</mark>
+                            <mark>Bootstrap</mark>
+                            <mark>Axios</mark>
+                            <mark>Consumo-API</mark>
                         </li>
                         <li class="detalhe-resumo entrada-padrao">
                             <strong>Resumo:</strong>
@@ -258,7 +598,7 @@
                         </li>
                     </ul>
                     <div class="nav-projeto">
-                        <a href="https://my-cars-khaki.vercel.app/" target="_blank" class="acessar-projeto">Acessar</a>
+                        <a href="https://my-cars-khaki.vercel.app/" rel="nofollow" target="_blank" class="acessar-projeto">Acessar</a>
                         <div class="assistir-video">
                             <button data-modal-target="myCars" class="assistir-projeto">
                                 <img src="assets/img/icones/youtube.png" alt="youtube" class="entrada-imagem">
@@ -270,7 +610,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="https://github.com/GustavoSachetto/My-cars" target="_blank" class="repositorio-projeto">
+                        <a href="https://github.com/GustavoSachetto/My-cars" rel="nofollow" target="_blank" class="repositorio-projeto">
                             <img src="assets/img/icones/github.svg" alt="Github" class="entrada-imagem">
                         </a>
                     </div>
@@ -281,7 +621,9 @@
                     <ul class="lista-detalhes-projeto">
                         <li class="detalhe-tecnologia entrada-padrao">
                             <strong>Tecnologias:</strong>
-                            <span>PHP e MySQL.</span>
+                            <mark>Php</mark>
+                            <mark>Composer</mark>
+                            <mark>MySQL</mark>
                         </li>
                         <li class="detalhe-resumo entrada-padrao">
                             <strong>Resumo:</strong>
@@ -295,7 +637,7 @@
                         </li>
                     </ul>
                     <div class="nav-projeto">
-                        <a href="https://gustavosachetto.site/php-puro" target="_blank" class="acessar-projeto">Acessar</a>
+                        <a href="https://gustavosachetto.site/php-puro" rel="external" target="_blank" class="acessar-projeto">Acessar</a>
                         <div class="assistir-video">
                             <button data-modal-target="phpPuro" class="assistir-projeto">
                                 <img src="assets/img/icones/youtube.png" alt="youtube" class="entrada-imagem">
@@ -307,7 +649,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="https://github.com/GustavoSachetto/Php-puro" target="_blank" class="repositorio-projeto">
+                        <a href="https://github.com/GustavoSachetto/Php-puro" rel="nofollow" target="_blank" class="repositorio-projeto">
                             <img src="assets/img/icones/github.svg" alt="Github" class="entrada-imagem">
                         </a>
                     </div>
@@ -318,7 +660,10 @@
                     <ul class="lista-detalhes-projeto">
                         <li class="detalhe-tecnologia entrada-padrao">
                             <strong>Tecnologias:</strong>
-                            <span>PHP, HTML, BOOTSTRAP e MySQL.</span>
+                            <mark>Php</mark>
+                            <mark>HTML</mark>
+                            <mark>Bootstrap</mark>
+                            <mark>MySQL</mark>
                         </li>
                         <li class="detalhe-resumo entrada-padrao">
                             <strong>Resumo:</strong>
@@ -338,7 +683,7 @@
                         </li>
                     </ul>
                     <div class="nav-projeto">
-                        <a href="https://gustavosachetto.site/crud-poo" target="_blank" class="acessar-projeto">Acessar</a>
+                        <a href="https://gustavosachetto.site/crud-poo" rel="external" target="_blank" class="acessar-projeto">Acessar</a>
                         <div class="assistir-video">
                             <button data-modal-target="crudPoo" class="assistir-projeto">
                                 <img src="assets/img/icones/youtube.png" alt="youtube" class="entrada-imagem">
@@ -350,7 +695,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="https://github.com/GustavoSachetto/Crud-POO" target="_blank" class="repositorio-projeto">
+                        <a href="https://github.com/GustavoSachetto/Crud-POO" rel="nofollow" target="_blank" class="repositorio-projeto">
                             <img src="assets/img/icones/github.svg" alt="Github" class="entrada-imagem">
                         </a>
                     </div>
@@ -361,7 +706,8 @@
                     <ul class="lista-detalhes-projeto">
                         <li class="detalhe-tecnologia entrada-padrao">
                             <strong>Tecnologias:</strong>
-                            <span>HTML e CSS.</span>
+                            <mark>HTML</mark>
+                            <mark>CSS</mark>
                         </li>
                         <li class="detalhe-resumo entrada-padrao">
                             <strong>Resumo:</strong>
@@ -375,7 +721,7 @@
                         </li>
                     </ul>
                     <div class="nav-projeto">
-                        <a href="https://gustavosachetto.site/huddle" target="_blank" class="acessar-projeto">Acessar</a>
+                        <a href="https://gustavosachetto.site/huddle" rel="external" target="_blank" class="acessar-projeto">Acessar</a>
                         <div class="assistir-video">
                             <button data-modal-target="huddle" class="assistir-projeto">
                                 <img src="assets/img/icones/youtube.png" alt="youtube" class="entrada-imagem">
@@ -387,7 +733,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="https://github.com/GustavoSachetto/Huddle" target="_blank" class="repositorio-projeto">
+                        <a href="https://github.com/GustavoSachetto/Huddle" rel="nofollow" target="_blank" class="repositorio-projeto">
                             <img src="assets/img/icones/github.svg" alt="Github" class="entrada-imagem">
                         </a>
                     </div>
@@ -398,7 +744,9 @@
                     <ul class="lista-detalhes-projeto">
                         <li class="detalhe-tecnologia entrada-padrao">
                             <strong>Tecnologias:</strong>
-                            <span>PHP, MySQL e Desenvolvimento-API.</span>
+                            <mark>Php</mark>
+                            <mark>MySQL</mark>
+                            <mark>Desenvolvimento-API</mark>
                         </li>
                         <li class="detalhe-resumo entrada-padrao">
                             <strong>Resumo:</strong>
@@ -412,7 +760,7 @@
                         </li>
                     </ul>
                     <div class="nav-projeto">
-                        <a href="https://www.postman.com/api-carros-gs/api-carros-developer-workspace/overview" target="_blank" class="acessar-projeto">Acessar</a>
+                        <a href="https://www.postman.com/api-carros-gs/api-carros-developer-workspace/overview" rel="nofollow" target="_blank" class="acessar-projeto">Acessar</a>
                         <div class="assistir-video">
                             <button data-modal-target="apiCarros" class="assistir-projeto">
                                 <img src="assets/img/icones/youtube.png" alt="youtube" class="entrada-imagem">
@@ -424,7 +772,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="https://github.com/GustavoSachetto/Api-carros" target="_blank" class="repositorio-projeto">
+                        <a href="https://github.com/GustavoSachetto/Api-carros" rel="nofollow" target="_blank" class="repositorio-projeto">
                             <img src="assets/img/icones/github.svg" alt="Github" class="entrada-imagem">
                         </a>
                     </div>
@@ -435,7 +783,12 @@
                     <ul class="lista-detalhes-projeto">
                         <li class="detalhe-tecnologia entrada-padrao">
                             <strong>Tecnologias:</strong>
-                            <span>HTML, SASS, CSS, JQUERY e Consumo-API.</span>
+                            <mark>HTML</mark>
+                            <mark>CSS</mark>
+                            <mark>Sass</mark>
+                            <mark>JavaScript</mark>
+                            <mark>Jquery</mark>
+                            <mark>Consumo-API</mark>
                         </li>
                         <li class="detalhe-resumo entrada-padrao">
                             <strong>Resumo:</strong>
@@ -449,7 +802,7 @@
                         </li>
                     </ul>
                     <div class="nav-projeto">
-                        <a href="https://gustavosachetto.site/desafio-paises" target="_blank" class="acessar-projeto">Acessar</a>
+                        <a href="https://gustavosachetto.site/desafio-paises" rel="external" target="_blank" class="acessar-projeto">Acessar</a>
                         <div class="assistir-video">
                             <button data-modal-target="desafioPaises" class="assistir-projeto">
                                 <img src="assets/img/icones/youtube.png" alt="youtube" class="entrada-imagem">
@@ -461,7 +814,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="https://github.com/GustavoSachetto/Desafio-paises" target="_blank" class="repositorio-projeto">
+                        <a href="https://github.com/GustavoSachetto/Desafio-paises" rel="nofollow" target="_blank" class="repositorio-projeto">
                             <img src="assets/img/icones/github.svg" alt="Github" class="entrada-imagem">
                         </a>
                     </div>
@@ -472,7 +825,15 @@
                     <ul class="lista-detalhes-projeto">
                         <li class="detalhe-tecnologia entrada-padrao">
                             <strong>Tecnologias:</strong>
-                            <span>PHP, HTML, CSS, MySQL, JQUERY, BOOTSTRAP e Consumo-API.</span>
+                            <mark>Php</mark>
+                            <mark>HTML</mark>
+                            <mark>CSS</mark>
+                            <mark>JavaScript</mark>
+                            <mark>Chart JS</mark>
+                            <mark>MySQL</mark>
+                            <mark>Jquery</mark>
+                            <mark>Bootstrap</mark>
+                            <mark>Consumo-API</mark>
                         </li>
                         <li class="detalhe-resumo entrada-padrao">
                             <strong>Resumo:</strong>
@@ -486,7 +847,7 @@
                         </li>
                     </ul>
                     <div class="nav-projeto">
-                        <a href="https://gustavosachetto.site/sistema-venda" target="_blank" class="acessar-projeto">Acessar</a>
+                        <a href="https://gustavosachetto.site/sistema-venda" rel="external" target="_blank" class="acessar-projeto">Acessar</a>
                         <div class="assistir-video">
                             <button data-modal-target="sistemaVenda" class="assistir-projeto">
                                 <img src="assets/img/icones/youtube.png" alt="youtube" class="entrada-imagem">
@@ -498,7 +859,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="https://github.com/GustavoSachetto/Sistema-venda" target="_blank" class="repositorio-projeto">
+                        <a href="https://github.com/GustavoSachetto/Sistema-venda" rel="nofollow" target="_blank" class="repositorio-projeto">
                             <img src="assets/img/icones/github.svg" alt="Github" class="entrada-imagem">
                         </a>
                     </div>
@@ -509,7 +870,10 @@
                     <ul class="lista-detalhes-projeto">
                         <li class="detalhe-tecnologia entrada-padrao">
                             <strong>Tecnologias:</strong>
-                            <span>HTML, CSS, JAVASCRIPT e Consumo-API.</span>
+                            <mark>HTML</mark>
+                            <mark>CSS</mark>
+                            <mark>JavaScript</mark>
+                            <mark>Consumo-API</mark>
                         </li>
                         <li class="detalhe-resumo entrada-padrao">
                             <strong>Resumo:</strong>
@@ -523,7 +887,7 @@
                         </li>
                     </ul>
                     <div class="nav-projeto">
-                        <a href="https://gustavosachetto.site/buscador-cep" target="_blank" class="acessar-projeto">Acessar</a>
+                        <a href="https://gustavosachetto.site/buscador-cep" rel="external" target="_blank" class="acessar-projeto">Acessar</a>
                         <div class="assistir-video">
                             <button data-modal-target="buscadorCep" class="assistir-projeto">
                                 <img src="assets/img/icones/youtube.png" alt="youtube" class="entrada-imagem">
@@ -535,7 +899,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="https://github.com/GustavoSachetto/Consumo-API" target="_blank" class="repositorio-projeto">
+                        <a href="https://github.com/GustavoSachetto/Consumo-API" rel="nofollow" target="_blank" class="repositorio-projeto">
                             <img src="assets/img/icones/github.svg" alt="Github" class="entrada-imagem">
                         </a>
                     </div>
@@ -546,7 +910,11 @@
                     <ul class="lista-detalhes-projeto">
                         <li class="detalhe-tecnologia entrada-padrao">
                             <strong>Tecnologias:</strong>
-                            <span>HTML, SASS, CSS e JQUERY.</span>
+                            <mark>HTML</mark>
+                            <mark>CSS</mark>
+                            <mark>Sass</mark>
+                            <mark>JavaScript</mark>
+                            <mark>Jquery</mark>
                         </li>
                         <li class="detalhe-resumo entrada-padrao">
                             <strong>Resumo:</strong>
@@ -560,7 +928,7 @@
                         </li>
                     </ul>
                     <div class="nav-projeto">
-                        <a href="https://gustavosachetto.site/desafio-frontend" target="_blank" class="acessar-projeto">Acessar</a>
+                        <a href="https://gustavosachetto.site/desafio-frontend" rel="external" target="_blank" class="acessar-projeto">Acessar</a>
                         <div class="assistir-video">
                             <button data-modal-target="desafioFrontend" class="assistir-projeto">
                                 <img src="assets/img/icones/youtube.png" alt="youtube" class="entrada-imagem">
@@ -572,7 +940,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="https://github.com/GustavoSachetto/Desafio-frontend" target="_blank" class="repositorio-projeto">
+                        <a href="https://github.com/GustavoSachetto/Desafio-frontend" rel="nofollow" target="_blank" class="repositorio-projeto">
                             <img src="assets/img/icones/github.svg" alt="Github" class="entrada-imagem">
                         </a>
                     </div>
@@ -583,7 +951,11 @@
                     <ul class="lista-detalhes-projeto">
                         <li class="detalhe-tecnologia entrada-padrao">
                             <strong>Tecnologias:</strong>
-                            <span>PHP, HTML, CSS e MySQL.</span>
+                            <mark>Php</mark>
+                            <mark>HTML</mark>
+                            <mark>CSS</mark>
+                            <mark>JavaScript</mark>
+                            <mark>MySQL</mark>
                         </li>
                         <li class="detalhe-resumo entrada-padrao"> 
                             <strong>Resumo:</strong>
@@ -596,7 +968,7 @@
                         </li>
                     </ul>
                     <div class="nav-projeto">
-                        <a href="https://gustavosachetto.site/sistema-noticia" target="_blank" class="acessar-projeto">Acessar</a>
+                        <a href="https://gustavosachetto.site/sistema-noticia" rel="external" target="_blank" class="acessar-projeto">Acessar</a>
                         <div class="assistir-video">
                             <button data-modal-target="cadastroNoticia" class="assistir-projeto">
                                 <img src="assets/img/icones/youtube.png" alt="youtube" class="entrada-imagem">
@@ -608,7 +980,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="https://github.com/GustavoSachetto/Sistema-cadastro" target="_blank" class="repositorio-projeto">
+                        <a href="https://github.com/GustavoSachetto/Sistema-cadastro" rel="nofollow" target="_blank" class="repositorio-projeto">
                             <img src="assets/img/icones/github.svg" alt="Github" class="entrada-imagem">
                         </a>
                     </div>
@@ -619,7 +991,9 @@
                     <ul class="lista-detalhes-projeto">
                         <li class="detalhe-tecnologia entrada-padrao">
                             <strong>Tecnologias:</strong>
-                            <span>HTML, CSS e JAVASCRIPT.</span>
+                            <mark>HTML</mark>
+                            <mark>CSS</mark>
+                            <mark>JavaScript</mark>
                         </li>
                         <li class="detalhe-resumo entrada-padrao">
                             <strong>Resumo:</strong>
@@ -634,7 +1008,7 @@
                         </li>
                     </ul>
                     <div class="nav-projeto">
-                        <a href="https://gustavosachetto.site/pixchel" target="_blank" class="acessar-projeto">Acessar</a>
+                        <a href="https://gustavosachetto.site/pixchel" rel="external" target="_blank" class="acessar-projeto">Acessar</a>
                         <div class="assistir-video">
                             <button data-modal-target="pixchel" class="assistir-projeto">
                                 <img src="assets/img/icones/youtube.png" alt="youtube" class="entrada-imagem">
@@ -646,7 +1020,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="https://github.com/GustavoSachetto/Pixchel" target="_blank" class="repositorio-projeto">
+                        <a href="https://github.com/GustavoSachetto/Pixchel" rel="nofollow" target="_blank" class="repositorio-projeto">
                             <img src="assets/img/icones/github.svg" alt="Github" class="entrada-imagem">
                         </a>
                     </div>
@@ -657,7 +1031,8 @@
                     <ul class="lista-detalhes-projeto">
                         <li class="detalhe-tecnologia entrada-padrao">
                             <strong>Tecnologias:</strong>
-                            <span>HTML e JAVASCRIPT.</span>
+                            <mark>HTML</mark>
+                            <mark>JavaScript</mark>
                         </li>
                         <li class="detalhe-resumo entrada-padrao">
                             <strong>Resumo:</strong>
@@ -669,7 +1044,7 @@
                         </li>
                     </ul>
                     <div class="nav-projeto">
-                        <a href="https://gustavosachetto.site/labirinto-jogo" target="_blank" class="acessar-projeto">Acessar</a>
+                        <a href="https://gustavosachetto.site/labirinto-jogo" rel="external" target="_blank" class="acessar-projeto">Acessar</a>
                         <div class="assistir-video">
                             <button data-modal-target="labirintoJogo" class="assistir-projeto">
                                 <img src="assets/img/icones/youtube.png" alt="youtube" class="entrada-imagem">
@@ -681,7 +1056,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="https://github.com/GustavoSachetto/Labirinto-jogo" target="_blank" class="repositorio-projeto">
+                        <a href="https://github.com/GustavoSachetto/Labirinto-jogo" rel="nofollow" target="_blank" class="repositorio-projeto">
                             <img src="assets/img/icones/github.svg" alt="Github" class="entrada-imagem">
                         </a>
                     </div>
@@ -692,7 +1067,11 @@
                     <ul class="lista-detalhes-projeto">
                         <li class="detalhe-tecnologia entrada-padrao">
                             <strong>Tecnologias:</strong>
-                            <span>PHP, HTML, CSS, JAVASCRIPT e BOOTSTRAP.</span>
+                            <mark>Php</mark>
+                            <mark>HTML</mark>
+                            <mark>CSS</mark>
+                            <mark>JavaScript</mark>
+                            <mark>Bootstrap</mark>
                         </li>
                         <li class="detalhe-resumo entrada-padrao">
                             <strong>Resumo:</strong>
@@ -713,7 +1092,7 @@
                         </li>
                     </ul>
                     <div class="nav-projeto">
-                        <a href="https://gustavosachetto.site/projeto-php" target="_blank" class="acessar-projeto">Acessar</a>
+                        <a href="https://gustavosachetto.site/projeto-php" rel="external" target="_blank" class="acessar-projeto">Acessar</a>
                         <div class="assistir-video">
                             <button data-modal-target="projetoPhp" class="assistir-projeto">
                                 <img src="assets/img/icones/youtube.png" alt="youtube" class="entrada-imagem">
@@ -725,7 +1104,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="https://github.com/GustavoSachetto/Projeto-PHP" target="_blank" class="repositorio-projeto">
+                        <a href="https://github.com/GustavoSachetto/Projeto-PHP" rel="nofollow" target="_blank" class="repositorio-projeto">
                             <img src="assets/img/icones/github.svg" alt="Github" class="entrada-imagem">
                         </a>
                     </div>
@@ -736,7 +1115,9 @@
                     <ul class="lista-detalhes-projeto">
                         <li class="detalhe-tecnologia entrada-padrao">
                             <strong>Tecnologias:</strong>
-                            <span>HTML, CSS e JAVASCRIPT.</span>
+                            <mark>HTML</mark>
+                            <mark>CSS</mark>
+                            <mark>JavaScript</mark>
                         </li>
                         <li class="detalhe-resumo entrada-padrao">
                             <strong>Resumo:</strong>
@@ -751,7 +1132,7 @@
                         </li>
                     </ul>
                     <div class="nav-projeto">
-                        <a href="https://gustavosachetto.site/site-android" target="_blank" class="acessar-projeto">Acessar</a>
+                        <a href="https://gustavosachetto.site/site-android" rel="external" target="_blank" class="acessar-projeto">Acessar</a>
                         <div class="assistir-video">
                             <button data-modal-target="siteAndroid" class="assistir-projeto">
                                 <img src="assets/img/icones/youtube.png" alt="youtube" class="entrada-imagem">
@@ -763,7 +1144,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="https://github.com/GustavoSachetto/Site-Android" target="_blank" class="repositorio-projeto">
+                        <a href="https://github.com/GustavoSachetto/Site-Android" rel="nofollow" target="_blank" class="repositorio-projeto">
                             <img src="assets/img/icones/github.svg" alt="Github" class="entrada-imagem">
                         </a>
                     </div>
@@ -783,15 +1164,15 @@
             <section class="container-contato-social">
                 <h2>Redes</h2>
                 <div class="container-redes">
-                    <a href="https://www.linkedin.com/in/gustavo-sachetto/" target="_blank"><img src="assets/img/icones/linkedin.svg" alt="Linkedin"></a>
-                    <!-- <a href="assets/docs/curriculo.pdf" target="_blank"><img src="assets/img/curriculo.svg" alt="Curriculo"></a> -->
-                    <a href="https://github.com/GustavoSachetto" target="_blank"><img src="assets/img/icones/github.svg" alt="Github"></a>
+                    <a href="https://www.linkedin.com/in/gustavo-sachetto/" rel="author" target="_blank"><img src="assets/img/icones/linkedin.svg" alt="Linkedin"></a>
+                    <a href="assets/docs/curriculo_GustavoSachetto.pdf" rel="author" target="_blank"><img src="assets/img/icones/curriculo.svg" alt="Curriculo"></a>
+                    <a href="https://github.com/GustavoSachetto" rel="author" target="_blank"><img src="assets/img/icones/github.svg" alt="Github"></a>
                 </div>
             </section>
         </article>
     </main>
     <footer>
-        <p>© 2023 <a href="https://gustavosachetto.site" target="_blank">Gustavo Sachetto</a> | Todos os direitos.</p>
+        <p>© 2023 <a href="https://gustavosachetto.site" rel="author">Gustavo Sachetto</a> | Todos os direitos.</p>
     </footer>
 </body>
 </html>

@@ -218,7 +218,7 @@ main {
 }
 
 article {
-    margin: 100px 0;
+    margin: 70px 0;
 }
 
 article#sobre {
@@ -340,102 +340,8 @@ h3 {
     font: normal 17px var(--font-padrao);
 }
 
-article#habilidades {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-aside.container-projeto-destaque {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    border-radius: 7px;
-    padding: 25px;
-    box-shadow: var(--sombra-card);
-    background-color: var(--cor-marrom);
-}
-
-aside.container-projeto-destaque img {
-    border-radius: 7px;
-    box-shadow: var(--sombra-img-padrao);
-}
-
-aside.container-projeto-destaque h3 {
-    font: bold 32px var(--font-destaque);
-    margin: 23px 0 13px 0;
-}
-
-aside.container-projeto-destaque p {
-    margin-bottom: 30px;
-}
-
-aside.container-projeto-destaque div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-aside.container-projeto-destaque div > a {
-    color: var(--cor-cinza-escuro);
-    padding: 12px 23px;
-    border-radius: 24px;
-    border: 1px solid var(--cor-cinza-escuro);
-    transition: 150ms ease-in;
-}
-
-aside.container-projeto-destaque div > .acessar:hover {
-    color: var(--cor-marrom);
-    border-color: var(--cor-azul-claro);
-    background-color: var(--cor-azul-claro);
-}
-
-aside.container-projeto-destaque div > .descricao:hover {
-    color: var(--cor-marrom);
-    border-color: var(--cor-azul);
-    background-color: var(--cor-azul);
-}
-
-aside.container-projeto-destaque div > .repositorio:hover {
-    color: var(--cor-marrom);
-    border-color: var(--cor-cinza-escuro);
-    background-color: var(--cor-cinza-escuro);
-}
-
-section.container-habilidades {
-    display: grid;
-    flex-wrap: wrap;
-    grid-template-columns: 50% 50%;
-    width: 50%;
-}
-
-section div.habilidade {
-    display: flex;
-    padding: 10px;
-    flex-direction: column;
-}
-
-section div.habilidade img {
-    width: 40px;
-    margin-bottom: 12px;
-}
-
-section div.habilidade h3 {
-    font: bold 20px var(--font-destaque);
-}
-
-section div.habilidade > p {
-    width: 80%;
-    font-size: 16px;
-    margin-top: 12px;
-    line-height: 26px;
-}
-
 article#tecnologias {
-    margin-bottom: 160px;
+    margin-bottom: 140px;
 }
 
 section.container-tecnologias {
@@ -510,6 +416,53 @@ section a.tecnologia > div.mensagem.desativado {
     }
 }
 
+article#certificados {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.estudos {
+    width: 49%;
+}
+
+aside.swiper {
+    width: 48%;
+    margin: 0;
+}
+
+section.estudos h3 {
+    font: 600 32px var(--font-destaque);
+} 
+
+section.estudos > div.sobre p {
+    font-size: 16px;
+    margin-top: 16px;
+    line-height: 26px;
+}
+
+section.estudos > div.linha-do-tempo h3 {
+    margin-top: 36px;
+}
+
+section.estudos > div.linha-do-tempo > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+section.estudos > div.linha-do-tempo > ul > li {
+    list-style: disc;
+    margin-left: 18px;
+}
+
+section.estudos > div.linha-do-tempo > ul > li p {
+    margin-top: 4px;
+}
+
 article#projetos {
     margin-bottom: 0;
 }
@@ -552,13 +505,29 @@ section div.projeto ul > li > span strong {
     color: var(--cor-azul-claro);
 }
 
+section div.projeto ul > li mark {
+    color: var(--cor-vermelho);
+    background: transparent;
+}
+
+section div.projeto ul > li.detalhe-tecnologia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
 section div.projeto ul > li.detalhe-tecnologia > span {
     font-size: 16px;
 }
 
-section div.projeto ul > li mark {
-    color: var(--cor-vermelho);
-    background: transparent;
+section div.projeto ul > li.detalhe-tecnologia mark {
+    font-size: 14px;
+    padding: 4px 8px;
+    border-radius: 30px;
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+    color: var(--cor-azul);
+    background-color: #4471fa31;
 }
 
 div.nav-projeto {
@@ -818,6 +787,18 @@ footer {
         display: none;
     }
 
+    article#certificados {
+        flex-direction: column;
+    }
+
+    section.estudos, aside.swiper {
+        width: 100%;
+    }
+
+    aside.swiper {
+        margin-top: 16px;
+    }
+
     .container-redes {
         width: 100%;
         margin-top: 28px;
@@ -889,6 +870,10 @@ footer {
         display: none;
     }
 
+    section.estudos, aside.swiper {
+        width: 92%;
+    }
+
     section div.projeto {
         height: 600px;
     }
@@ -943,6 +928,10 @@ footer {
 
     section.container-tecnologias {
         grid-template-columns: 33% 33% 33%;
+    }
+
+    aside.swiper ul.lista-detalhes-certificado > li {
+        font-size: 16px;
     }
 
     section.container-projetos {
